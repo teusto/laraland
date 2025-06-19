@@ -4,13 +4,22 @@ const Options = () => {
     return (
         <div className={styles.options_wrapper}>
             <div className={styles.options_item}>
-                1
+                <div className={styles.options_item_title}>15 min</div>
+                <div className={styles.options_item_text}>
+                    <p className={styles.options_item_text_price}>asdadsa<br />$15/week</p>
+                </div>
             </div>
             <div className={styles.options_item}>
-                2
+                <div className={styles.options_item_title}>15 min</div>
+                <div className={styles.options_item_text}>
+                    <p className={styles.options_item_text_price}>asdadsa<br />$15/week</p>
+                </div>
             </div>
             <div className={styles.options_item}>
-                3
+                <div className={styles.options_item_title}>15 min</div>
+                <div className={styles.options_item_text}>
+                    <p className={styles.options_item_text_price}>asdadsa<br />$15/week</p>
+                </div>
             </div>
         </div>
     )
