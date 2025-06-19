@@ -1,0 +1,41 @@
+.intro_wrapper {
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    .intro_text {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        background-color: #d8d8d8;
+        border-radius: 18px;
+        padding: 2rem;
+        box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+        gap: 1rem;
+        color: #131313;
+        z-index: 1;
+        .intro_text_sub {
+            font-size: .7rem;
+        }
+        .intro_text_title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: -1.2px;
+        }   
+    }
+    video {
+        z-index: 2;
+        width: 70%;
+        height: auto;
+        background-color: #303030;
+        border-radius: 18px;
+        box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    }
+}

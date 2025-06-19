@@ -1,3 +1,5 @@
+@use "./colors" as colors;
+
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -65,5 +67,5 @@
     background-image: url("../vpbg.png"); 
     background-size: cover;
     background-position: center;
-    background-color: rgb(245, 245, 245);
+    background-color: colors.$background-color;
   }

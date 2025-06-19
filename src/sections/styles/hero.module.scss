@@ -1,3 +1,5 @@
+@use "../../assets/styles/colors" as colors;
+
 .hero_wrapper {
     position: relative;
     width: 100%;
@@ -17,7 +19,7 @@
         width: 2.5rem;
         height: 2.5rem;
         border-radius: 12px;
-        background-color: #d5abff6b;
+        background-color: #a6a6a66b;
         border: 1px solid #ffffff;
         display: flex;
         justify-content: center;
@@ -26,10 +28,28 @@
         font-weight: bold;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         cursor: pointer;
+        z-index: 2;
         span {
-            color: #310071;
+            color: #242424;
         }
     }
+
+    .hero_text {
+        color: colors.$text-color-inverse;
+        text-align: center;
+        text-wrap: pretty;
+        z-index: 2;
+        h1 {
+            font-size: 6rem;
+            font-weight: bold;
+        }
+        p {
+            font-size: 1rem;
+            width: 70%;
+            margin: auto;
+        }
+    }
+
     .hero_cta {
         position: absolute;
         bottom: 2rem;
@@ -38,6 +58,7 @@
         min-width: 20rem;
         text-transform: uppercase;
         font-weight: 500;
+        z-index: 2;
         //border: 1px solid red;
 
         button {

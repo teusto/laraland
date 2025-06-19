@@ -1,11 +1,14 @@
+@use "../../assets/styles/colors" as colors;
+
 .footer_wrapper {
     p {
         font-size: .7rem;
         font-weight: 500;
-        color: #000;
+        color: colors.$text-color-inverse;
         span {
             font-weight: bold;
             color: #E83B3A;
+            cursor: pointer;
         }
     }
 }
