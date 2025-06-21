@@ -81,13 +81,18 @@ const Hero = () => {
                 <span>LL</span>
             </div>
 
+            <div className={styles.navbar}>
+                    <li>_Intro</li>
+                    <li>_FAQ</li>
+            </div>
+
             <div className={styles.hero_text}>
-                <h1>Hero Title</h1>
-                <p>Hero Dolorem illo cum, deleniti sunt libero ex ipsa exercitationem atque harum fuga, obcaecati eaque aut natus accusamus.</p>
+                <h1>Calmverse</h1>
+                <p>Die Tür zu deinem Universum  – ein Raum, in dem du deiner inneren Welt begegnen, dich erforschen und Geborgenheit finden darfst. Hier öffnet sich Weite, wo sonst Enge herrscht, und Stille, wo sonst Lärm ist.</p>
             </div>
             
             <div className={styles.hero_cta}>
-                <button>Get Started</button>
+                <button>Jetzt eintreten</button>
             </div>
         </div>
     )

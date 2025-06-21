@@ -1,3 +1,5 @@
+@use "../../assets/styles/colors" as colors;
+
 .options_wrapper {
     width: 100%;
     height: auto;
@@ -11,13 +13,13 @@
     margin: 0 auto;
     //box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     .options_item {
-        width: 252px;
+        width: 242px;
         aspect-ratio: 7 / 8.5;
         border-radius: 18px;
         padding: 2rem;
-        color: #000;
+        color: colors.$text-color;
         box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
-        background-color: rgb(233, 233, 233);
+        background-color: colors.$quaternary-color;
         letter-spacing: -1px;
         display: flex;
         flex-direction: column;

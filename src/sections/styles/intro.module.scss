@@ -8,6 +8,7 @@
     align-items: center;
     gap: 1em;
     .intro_text {
+        position: relative;
         width: 70%;
         margin: 0 auto;
         display: flex;
@@ -28,7 +29,26 @@
             font-size: 1.2rem;
             font-weight: 600;
             letter-spacing: -1.2px;
-        }   
+        } 
+        .intro_text_cta {
+            position: absolute;
+            bottom: .5rem;
+            right: .5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: -1.2px;
+            border-radius: 12px;
+            padding: 1rem;
+            cursor: pointer;
+            background-color: #131313;
+            color: #fff;
+            transition: all .2s ease-in-out;
+            &:hover {
+                transform: translateY(-4px);
+                color: #131313;
+                background-color: #b7b7b7;
+            }
+        }  
     }
     video {
         z-index: 2;

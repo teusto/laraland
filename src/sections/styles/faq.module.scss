@@ -27,11 +27,25 @@
             justify-content: space-between;
             gap: 5rem;
             .left_title {
-                font-size: 2rem;
+                font-size: 1.65rem;
                 font-weight: bold;
             }
             .left_text {
-                font-size: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                li {
+                    list-style: none;
+                    font-size: .7rem;
+                    font-weight: 600;
+                    letter-spacing: -1.2px;
+                    cursor: pointer;
+                    transition: all .2s ease-in-out;
+                    &:hover {
+                        text-decoration: underline;
+                        transform: translateX(4px);
+                    }
+                }
             }
         }
         .right {

@@ -11,12 +11,15 @@ import { motion } from "motion/react"
 const App = () => {
   return (
     <div id="App">
-      <div style={{ width: "100vw", maxWidth: "100vw", height: "100vh", padding: "2rem" }}>
+      <div style={{ width: "100vw", maxWidth: "100vw", height: "225vh", padding: "2rem", position: "relative" }}>
         <Hero />
       </div>
       <div style={{ width: "100vw", maxWidth: "100vw", height: "100vh", padding: "2rem" }}>
         <Text />
       </div>
+      <div style={{ width: "100vw", maxWidth: "100vw", padding: "2rem" }}>
+          <Explanation />
+        </div>
       <div style={{ width: "100vw", maxWidth: "100vw", padding: "2rem" }}>
         <Cards />
       </div>
@@ -27,10 +30,7 @@ const App = () => {
         <div style={{ width: "100vw", maxWidth: "100vw", padding: "5rem 2rem" }}>
           <Intro />
         </div>
-        <div style={{ width: "100vw", maxWidth: "100vw", padding: "2rem" }}>
-          <Explanation />
-        </div>
-        <div style={{ width: "100vw", maxWidth: "100vw", padding: "2rem" }}>
+        <div style={{ width: "100vw", maxWidth: "100vw", padding: "5rem 2rem 2rem" }}>
           <Faq />
         </div>
         <div style={{ width: "100vw", maxWidth: "100vw", padding: "2rem" }}>
