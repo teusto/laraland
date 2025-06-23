@@ -1,10 +1,21 @@
+@use "../../assets/styles/colors" as colors;
+
 .cards_wrapper {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     height: auto;
     border-radius: 18px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .cards_title {
+        font-size: 3rem;
+        font-family: "nelphim", sans-serif;
+        color: colors.$text-color;
+        margin-bottom: 4rem;
+    }
 
     .card_list {
         display: flex;
@@ -12,38 +23,48 @@
         align-content: flex-start;
         justify-content: center;
         align-items: center;
-        gap: 25px;
+        gap: 2rem;
         
         .card {
             position: relative;
             height: 460px;
-            flex: 0 0 30%;
-            max-width: 30%;
+            max-width: 32%;
             border-radius: 18px;
-            padding: 25px;
-            color: #000;
+            padding: 2rem;
+            color: colors.$text-color;
             box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: left;
+            h3 {
+                font-size: 1.2rem;
+                font-family: "nelphim", sans-serif;
+            }
+            p {
+                font-size: 1rem;
+                width: 80%;
+                font-weight: 500;
+                font-family: "kollektif", sans-serif;
+            }
         }
 
         .card:nth-child(4n + 1),
         .card:nth-child(4n + 4) {
-            flex: 0 0 60%;
             max-width: 60%;
         }
 
         .card:nth-child(odd) {
-            padding-left: 0;
-            background-color: #cfcfcf;
+            background-color: #fffcf2;
         }
 
         .card:nth-child(even) {
-            padding-right: 0;
-            background-color: #e0e0e0;
+            background-color: #fdebeb;
         }
 
         .card:nth-child(2) {
             padding: 0;
-            max-width: 100%;
+            max-width: 34%;
             video {
                 border-radius: 18px;
                 width: auto;

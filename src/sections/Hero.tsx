@@ -82,8 +82,10 @@ const Hero = () => {
             </div>
 
             <div className={styles.navbar}>
-                    <li>_Intro</li>
-                    <li>_FAQ</li>
+                    <li onClick={() => window.scrollTo({ top: document.getElementById("intro")?.offsetTop, behavior: "smooth" })}>_Intro</li>
+                    <li onClick={() => window.scrollTo({ top: document.getElementById("kurse")?.offsetTop, behavior: "smooth" })}>_Kurse</li>
+                    <li onClick={() => window.scrollTo({ top: document.getElementById("kontakt")?.offsetTop, behavior: "smooth" })}>_Kontakt</li>
+                    <li onClick={() => window.scrollTo({ top: document.getElementById("faq")?.offsetTop, behavior: "smooth" })}>_FAQ</li>
             </div>
 
             <div className={styles.hero_text}>

@@ -1,0 +1,21 @@
+@use "../../assets/styles/colors" as colors;
+
+.contacts_wrapper {
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: colors.$text-color-inverse;
+    padding-bottom: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 4rem;
+        font-family: "nelphim", sans-serif;
+    }
+}

@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: colors.$text-color-inverse;
+    color: colors.$text-color;
     .faq_item {
         background-color: colors.$secondary-color;
         width: 70%;
@@ -17,7 +17,7 @@
         border-radius: 18px;
         .left {
             flex: 1;
-            background-color: colors.$quaternary-color;
+            background-color: #e7e7e7;
             padding: 2rem;
             border-radius: 18px;
             border-top-right-radius: 0;
@@ -27,8 +27,9 @@
             justify-content: space-between;
             gap: 5rem;
             .left_title {
-                font-size: 1.65rem;
+                font-size: 2rem;
                 font-weight: bold;
+                font-family: "nelphim", sans-serif;
             }
             .left_text {
                 display: flex;
@@ -36,9 +37,9 @@
                 gap: .5rem;
                 li {
                     list-style: none;
-                    font-size: .7rem;
-                    font-weight: 600;
-                    letter-spacing: -1.2px;
+                    font-size: .8rem;
+                    font-weight: 500;
+                    font-family: "kollektif", sans-serif;
                     cursor: pointer;
                     transition: all .2s ease-in-out;
                     &:hover {
@@ -50,13 +51,14 @@
         }
         .right {
             flex: 1.5;
-            background-color: colors.$tertiary-color;
+            background-color: #fcf9f9;
             padding: 2rem;
             border-radius: 18px;
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
             display: flex;
             flex-direction: column;
+            font-family: "kollektif", sans-serif;
             gap: 5rem;
             .right_text {
                 font-size: 1rem;

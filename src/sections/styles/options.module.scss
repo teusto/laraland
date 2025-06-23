@@ -1,38 +1,45 @@
 @use "../../assets/styles/colors" as colors;
 
 .options_wrapper {
-    width: 100%;
+    width: 70%;
     height: auto;
-    border-radius: 18px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    width: 60%;
     margin: 0 auto;
     //box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     .options_item {
-        width: 242px;
-        aspect-ratio: 7 / 8.5;
+        width: 100%;
+        aspect-ratio: 2 / 1.7;
         border-radius: 18px;
         padding: 2rem;
         color: colors.$text-color;
         box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
-        background-color: colors.$quaternary-color;
+        background-color: #fffcf2;
         letter-spacing: -1px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 4rem;
         align-items: left;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+        color: colors.$text-color;
+        &:hover {
+            transform: translateY(-6px);
+        }
         .options_item_title {
-            font-size: .9rem;
+            font-size: .8rem;
+            font-family: "nelphim", sans-serif;
         }
         .options_item_text {
-            font-weight: bold;
+            font-weight: 500;
+            font-family: "kollektif", sans-serif;
             .options_item_text_price {
-                font-size: 1.5rem;
+                font-size: 1.2rem;
+                font-weight: bold;
+                font-family: "kollektif", sans-serif;
             }
         }
     }

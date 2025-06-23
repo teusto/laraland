@@ -1,3 +1,5 @@
+@use "../../assets/styles/colors" as colors;
+
 .intro_wrapper {
     width: 100%;
     height: auto;
@@ -15,20 +17,22 @@
         flex-direction: column;
         justify-content: center;
         align-items: left;
-        background-color: #d8d8d8;
+        background-color: #fffcf2;
         border-radius: 18px;
         padding: 2rem;
         box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
         gap: 1rem;
-        color: #131313;
+        color: colors.$text-color;
         z-index: 1;
         .intro_text_sub {
             font-size: .7rem;
+            font-weight: 600;
+            font-family: "nelphim", sans-serif;
         }
         .intro_text_title {
             font-size: 1.2rem;
             font-weight: 600;
-            letter-spacing: -1.2px;
+            font-family: "nelphim", sans-serif;
         } 
         .intro_text_cta {
             position: absolute;
@@ -36,17 +40,17 @@
             right: .5rem;
             font-size: 1rem;
             font-weight: 600;
-            letter-spacing: -1.2px;
+            font-family: "nelphim", sans-serif;
             border-radius: 12px;
             padding: 1rem;
             cursor: pointer;
-            background-color: #131313;
-            color: #fff;
+            background-color: #222222;
+            color: colors.$text-color-inverse;
             transition: all .2s ease-in-out;
             &:hover {
                 transform: translateY(-4px);
-                color: #131313;
-                background-color: #b7b7b7;
+                color: colors.$text-color;
+                background-color: #ffffff;
             }
         }  
     }
@@ -54,7 +58,7 @@
         z-index: 2;
         width: 70%;
         height: auto;
-        background-color: #303030;
+        background-color: #161616;
         border-radius: 18px;
         box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
     }

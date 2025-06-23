@@ -5,7 +5,7 @@
     top: 2rem;
     width: 100%;
     height: 90vh;
-    background-color: rgb(206, 206, 206);
+    background-color: colors.$background-color;
     border-radius: 18px;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@
         cursor: pointer;
         z-index: 2;
         span {
-            color: #242424;
+            color: colors.$text-color-inverse;
         }
     }
 
@@ -51,7 +51,7 @@
             transition: all .2s ease-in-out;
             &:hover {
                 text-decoration: underline;
-                transform: translateX(2px);
+                transform: translateY(-2px);
             }
         }
     }
@@ -79,21 +79,27 @@
         bottom: 2rem;
         right: 2rem;
         white-space: nowrap;
-        min-width: 20rem;
+        min-width: 15rem;
+        font-family: "kollektif", sans-serif;
         text-transform: uppercase;
-        font-weight: 500;
+        font-weight: 600;
         z-index: 2;
-        //border: 1px solid red;
 
         button {
             width: 100%;
             padding: 1rem;
-            background-color: rgb(173, 173, 173);
-            color: #fff;
-            border: 1px solid rgb(228, 228, 228);
+            background-color: #ffffff;
+            color: colors.$text-color;
+            border: 1px solid #ffffff;
             box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+            &:hover {
+                transform: translateY(-4px);
+                color: colors.$text-color-inverse;
+                background-color: #dc3c3c;
+                border-color: #dc3c3c;
+            }
         }
-
-        //transform: translateX(-50%);
     }
 }
