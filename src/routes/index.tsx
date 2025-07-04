@@ -1,17 +1,22 @@
-import Hero from "./sections/Hero";
-import Cards from "./sections/Cards";
-import Options from "./sections/Options";
-import Faq from "./sections/Faq";
-import Text from "./sections/Text";
-import Footer from "./sections/Footer";
-import Intro from "./sections/Intro";
-import Explanation from "./sections/Explanation";
-import Contacts from "./sections/Contacts";
+import { createFileRoute } from '@tanstack/react-router'
+import Hero from "../sections/Hero";
+import Cards from "../sections/Cards";
+import Options from "../sections/Options";
+import Faq from "../sections/Faq";
+import Text from "../sections/Text";
+import Footer from "../sections/Footer";
+import Intro from "../sections/Intro";
+import Explanation from "../sections/Explanation";
+import Contacts from "../sections/Contacts";
 import { motion } from "motion/react"
 
-const App = () => {
-  return (
-    <div id="App">
+export const Route = createFileRoute('/')({
+  component: () => <Home />,
+})
+
+const Home = () => {
+    return (
+        <div id="App">
       <div style={{ width: "100vw", maxWidth: "100vw", height: "225vh", padding: "2rem", position: "relative" }}>
         <Hero />
       </div>
@@ -42,7 +47,5 @@ const App = () => {
         </div>
       </motion.div>
     </div>
-  )
+    )
 }
-
-export default App;
