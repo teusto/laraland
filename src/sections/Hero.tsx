@@ -104,7 +104,7 @@ const Hero = () => {
             </div>
             
             <div className={styles.hero_cta}>
-                <button>Jetzt eintreten</button>
+                <a href="https://calendly.com/laralensdorf/30min" target="_blank" rel="noopener noreferrer" >Jetzt eintreten</a>
             </div>
         </div>
     )

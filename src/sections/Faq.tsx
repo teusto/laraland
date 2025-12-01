@@ -1,16 +1,18 @@
 import styles from "./styles/faq.module.scss";
 import { useState } from "react";
 
-const enum faqOption {
-    Option1,
-    Option2,
-    Option3,
-    Option4,
-    Option5,
-    Option6,
-    Option7,
-    Option8
-}
+const faqOption = {
+    Option1: 0,
+    Option2: 1,
+    Option3: 2,
+    Option4: 3,
+    Option5: 4,
+    Option6: 5,
+    Option7: 6,
+    Option8: 7,
+} as const;
+
+type faqOption = typeof faqOption[keyof typeof faqOption];
 
 const Faq = () => {
     const [faq, setFaq] = useState<faqOption>(faqOption.Option1);

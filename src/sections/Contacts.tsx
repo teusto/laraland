@@ -1,6 +1,4 @@
 import style from "./styles/contacts.module.scss";
-import { SiTiktok } from "react-icons/si";
-import { SiInstagram } from "react-icons/si";
 import { SiWhatsapp } from "react-icons/si";
 
 const Contacts = () => {
