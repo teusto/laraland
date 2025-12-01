@@ -1,5 +1,6 @@
 import styles from "./styles/cards.module.scss";
 import srcVideo from "../assets/videos/other.mp4";
+import srcVideo2 from "../assets/videos/vid2.mp4";
 import { motion } from "motion/react"
 
 const Cards = () => {
@@ -57,7 +58,7 @@ const Cards = () => {
                 </li>
                 <li className={styles.card_wrapper}>
                     <div className={styles.card_half_video}>
-                        <video src={srcVideo} autoPlay loop muted />
+                        <video src={srcVideo2} autoPlay loop muted />
                     </div>
                     <motion.div className={styles.card_half} initial={{ opacity: 0, x: -60 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1.5 }}>
                         <h3>3. This session is for you if you want:</h3>

@@ -21,7 +21,19 @@ const About = () => {
     const finalSectionRef = useRef<HTMLDivElement>(null);
 
     useGSAP(() => {
+        // Only apply scroll animations on desktop (> 768px)
+        const isMobile = window.matchMedia("(max-width: 768px)").matches;
+        
+        if (isMobile) {
+            // On mobile, just ensure everything is visible
+            gsap.set([titleWrapperRef.current, text1Ref.current, text2Ref.current, text3Ref.current, finalSectionRef.current], {
+                opacity: 1,
+                transform: "none"
+            });
+            return;
+        }
 
+        // Desktop animations
         gsap.from(titleWrapperRef.current, {
             yPercent: 170,
             duration: 1,
@@ -34,7 +46,7 @@ const About = () => {
                 trigger: text1Ref.current,
                 start: "-20%",
                 scrub: 1,
-                markers: true
+                markers: false
             },
             xPercent: -150,
             yPercent: -150,
@@ -47,7 +59,6 @@ const About = () => {
                 trigger: text2Ref.current,
                 start: "+300%",
                 scrub: 1,
-                markers: true
             },
             xPercent: -50,
             yPercent: -150,
@@ -60,7 +71,6 @@ const About = () => {
                 trigger: text3Ref.current,
                 start: "+600%",
                 scrub: 1,
-                markers: true
             },
             xPercent: 50,
             yPercent: -150,
@@ -74,7 +84,6 @@ const About = () => {
                 trigger: finalSectionRef.current,
                 start: "+1020%",
                 scrub: 1,
-                markers: true
             },
             xPercent: -50,
             yPercent: 170,
@@ -99,7 +108,9 @@ const About = () => {
             </div>
             
             <div className={styles.final_section} ref={finalSectionRef}>
-                <p ref={youTextRef} className={styles.about_you_text}>Your Turn, in der du dich auf dich selbst konzentrierst und dich in deiner inneren Welt begegnen kannst.</p>
+                <p ref={youTextRef} className={styles.about_you_text}>Your Turn, Let's break free from what's holding you back. Book a quick introductory session to see how we can support you.</p>
+            
+                <a href="https://calendly.com/laralensdorf/30min" target="_blank" rel="noopener noreferrer" className={styles.contacts_content_cta} >_Book a demo</a>
             </div>
         </div>
     )

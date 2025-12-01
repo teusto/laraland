@@ -47,3 +47,120 @@
         }
     }
 }
+
+// ============================================
+// RESPONSIVE STYLES - TABLET & MOBILE
+// ============================================
+
+// Tablet (portrait and landscape)
+@media (max-width: 1024px) {
+    .explanation_wrapper {
+        width: 100%;
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .explanation_container {
+            gap: 1.5rem;
+            flex-wrap: wrap;
+
+            .explanation_item {
+                width: calc(33.333% - 1rem);
+                min-width: calc(33.333% - 1rem);
+                flex: none;
+
+                h3 {
+                    font-size: 0.85rem;
+                }
+            }
+        }
+    }
+}
+
+// Mobile (landscape)
+@media (max-width: 768px) {
+    .explanation_wrapper {
+        width: 90%;
+        padding-bottom: 3rem;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .explanation_container {
+            gap: 1.5rem;
+            flex-wrap: wrap;
+
+            .explanation_item {
+                width: calc(50% - 0.75rem);
+                min-width: calc(50% - 0.75rem);
+                flex: none;
+
+                h3 {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+// Mobile (portrait - phones)
+@media (max-width: 480px) {
+    .explanation_wrapper {
+        width: 95%;
+        padding-bottom: 2.5rem;
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+
+        .explanation_container {
+            flex-direction: column;
+            gap: 1rem;
+
+            .explanation_item {
+                width: 100%;
+                min-width: 100%;
+                aspect-ratio: auto;
+                min-height: 120px;
+                border-radius: 12px;
+                padding: 1.25rem;
+
+                h3 {
+                    font-size: 0.9rem;
+                    line-height: 1.4;
+                }
+            }
+        }
+    }
+}
+
+// Extra small devices
+@media (max-width: 360px) {
+    .explanation_wrapper {
+        padding-bottom: 2rem;
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .explanation_container {
+            gap: 0.8rem;
+
+            .explanation_item {
+                min-height: 100px;
+                padding: 1rem;
+
+                h3 {
+                    font-size: 0.85rem;
+                }
+            }
+        }
+    }
+}

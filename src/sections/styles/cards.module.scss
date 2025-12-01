@@ -146,3 +146,255 @@ li {
     padding: 0;
     margin: 0;
 }
+
+// ============================================
+// RESPONSIVE STYLES - TABLET & MOBILE
+// ============================================
+
+// Tablet (portrait and landscape)
+@media (max-width: 1024px) {
+    .cards_wrapper {
+        width: 100%;
+
+        .cards_title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .card_list {
+            gap: 1.5rem;
+
+            .card {
+                height: 480px;
+                max-width: 45%;
+                padding: 1.5rem;
+
+                h3 {
+                    font-size: 1.1rem;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    width: 90%;
+                }
+
+                ul {
+                    font-size: 0.9rem;
+                }
+            }
+
+            .card:nth-child(4n + 1),
+            .card:nth-child(4n + 4) {
+                max-width: 45%;
+            }
+
+            .card_wrapper {
+                height: 480px;
+                max-width: 45%;
+
+                .card_half {
+                    padding: 1.5rem;
+
+                    h3 {
+                        font-size: 1.1rem;
+                    }
+
+                    p {
+                        font-size: 0.8rem;
+                        width: 90%;
+                    }
+
+                    ul {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Mobile (landscape)
+@media (max-width: 768px) {
+    .cards_wrapper {
+        width: 90%;
+
+        .cards_title {
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .card_list {
+            gap: 1.5rem;
+
+            .card {
+                height: auto;
+                min-height: 400px;
+                max-width: 100% !important;
+                padding: 1.5rem;
+
+                h3 {
+                    font-size: 1rem;
+                }
+
+                p {
+                    font-size: 0.85rem;
+                    width: 100%;
+                }
+
+                ul {
+                    font-size: 0.85rem;
+                }
+            }
+
+            .card:nth-child(4n + 1),
+            .card:nth-child(4n + 4) {
+                max-width: 100% !important;
+            }
+
+            .card_wrapper {
+                height: auto;
+                max-width: 100% !important;
+                gap: 1rem;
+
+                .card_half {
+                    height: auto;
+                    min-height: 200px;
+                    padding: 1.5rem;
+
+                    h3 {
+                        font-size: 1rem;
+                    }
+
+                    p {
+                        font-size: 0.8rem;
+                        width: 100%;
+                    }
+
+                    ul {
+                        font-size: 0.85rem;
+                    }
+                }
+
+                .card_half_video {
+                    height: 250px;
+                    min-height: 250px;
+                }
+            }
+        }
+    }
+}
+
+// Mobile (portrait - phones)
+@media (max-width: 480px) {
+    .cards_wrapper {
+        width: 95%;
+
+        .cards_title {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+
+        .card_list {
+            gap: 1rem;
+
+            .card {
+                min-height: 350px;
+                padding: 1.25rem;
+                border-radius: 6px;
+                width: 100%;
+
+                h3 {
+                    font-size: 0.95rem;
+                }
+
+                p {
+                    font-size: 0.8rem;
+                    line-height: 1.5;
+                }
+
+                ul {
+                    font-size: 0.8rem;
+                    line-height: 1.6;
+                }
+            }
+
+            .card_wrapper {
+                gap: 0.8rem;
+
+                .card_half {
+                    min-height: 180px;
+                    padding: 1.25rem;
+                    border-radius: 12px;
+
+                    h3 {
+                        font-size: 0.95rem;
+                    }
+
+                    p {
+                        font-size: 0.75rem;
+                        line-height: 1.5;
+                    }
+
+                    ul {
+                        font-size: 0.8rem;
+                        line-height: 1.6;
+                    }
+                }
+
+                .card_half_video {
+                    height: 220px;
+                    min-height: 220px;
+                    border-radius: 12px;
+                }
+            }
+        }
+    }
+}
+
+// Extra small devices
+@media (max-width: 360px) {
+    .cards_wrapper {
+        .cards_title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card_list {
+            .card {
+                padding: 1rem;
+                min-height: 320px;
+
+                h3 {
+                    font-size: 0.9rem;
+                }
+
+                p,
+                ul {
+                    font-size: 0.75rem;
+                }
+            }
+
+            .card_wrapper {
+                .card_half {
+                    padding: 1rem;
+                    min-height: 160px;
+
+                    h3 {
+                        font-size: 0.9rem;
+                    }
+
+                    p,
+                    ul {
+                        font-size: 0.7rem;
+                    }
+                }
+
+                .card_half_video {
+                    height: 200px;
+                    min-height: 200px;
+                }
+            }
+        }
+    }
+}

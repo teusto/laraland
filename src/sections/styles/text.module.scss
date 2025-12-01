@@ -24,4 +24,82 @@
             font-family: "kollektif", sans-serif;
         }
     }
-}   
+}
+
+// ============================================
+// RESPONSIVE STYLES - TABLET & MOBILE
+// ============================================
+
+// Tablet (portrait and landscape)
+@media (max-width: 1024px) {
+    .text_wrapper {
+        padding: 1.5rem;
+
+        h2 {
+            font-size: 1.6rem;
+            width: 80%;
+
+            span {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+// Mobile (landscape)
+@media (max-width: 768px) {
+    .text_wrapper {
+        height: auto;
+        min-height: 60vh;
+        padding: 1.5rem;
+        border-radius: 12px;
+
+        h2 {
+            font-size: 1.4rem;
+            width: 90%;
+            line-height: 1.5;
+
+            span {
+                font-size: 0.85rem;
+            }
+        }
+    }
+}
+
+// Mobile (portrait - phones)
+@media (max-width: 480px) {
+    .text_wrapper {
+        height: auto;
+        min-height: 60vh;
+        padding: 1.25rem;
+        border-radius: 12px;
+
+        h2 {
+            font-size: 1.2rem;
+            width: 95%;
+            line-height: 1.6;
+
+            span {
+                font-size: 0.8rem;
+                display: block;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}
+
+// Extra small devices
+@media (max-width: 360px) {
+    .text_wrapper {
+        padding: 1rem;
+
+        h2 {
+            font-size: 1.1rem;
+            width: 100%;
+
+            span {
+                font-size: 0.75rem;
+            }
+        }
+    }
+}

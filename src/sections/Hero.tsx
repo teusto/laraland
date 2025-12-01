@@ -6,14 +6,14 @@ import Logo from "../assets/images/logo.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const TOTAL_FRAMES = 125;
+const TOTAL_FRAMES = 217;
 
 const Hero = () => {
-    const [images, setImages] = useState([]);
+    const [images, setImages] = useState<HTMLImageElement[]>([]);
     const canvasRef = useRef<HTMLCanvasElement>(null);
 
     useEffect(() => {
-        const frameImages = [];
+        const frameImages: HTMLImageElement[] = [];
         for (let i = 1; i <= TOTAL_FRAMES; i++) {
             const img = new Image();
             img.src = `./src/assets/videos/frames/frame_${String(i).padStart(4, "0")}.jpg`;
@@ -26,12 +26,21 @@ const Hero = () => {
         if (images.length === 0) return;
 
         const canvas = canvasRef.current;
-        const context = canvas?.getContext("2d");
+        if (!canvas) return;
 
-        const scale = window.devicePixelRatio || 1;
-        canvas.width = 1920 * scale;
-        canvas.height = 1080 * scale;
-        context?.scale(scale, scale);
+        const context = canvas.getContext("2d");
+        if (!context) return;
+
+        // Make canvas responsive based on container size
+        const updateCanvasSize = () => {
+            const scale = window.devicePixelRatio || 1;
+            const rect = canvas.getBoundingClientRect();
+            canvas.width = rect.width * scale;
+            canvas.height = rect.height * scale;
+            context.scale(scale, scale);
+        };
+
+        updateCanvasSize();
 
         const frameState = {
             frame: 0
@@ -39,9 +48,10 @@ const Hero = () => {
 
         const render = () => {
             const img = images[frameState.frame];
+            const scale = window.devicePixelRatio || 1;
             if(img?.complete){
-                context?.clearRect(0, 0, canvas?.width, canvas?.height);
-                context?.drawImage(img, 0, 0, canvas.width / scale, canvas?.height / scale);
+                context.clearRect(0, 0, canvas.width, canvas.height);
+                context.drawImage(img, 0, 0, canvas.width / scale, canvas.height / scale);
             }
         };
 
@@ -72,7 +82,6 @@ const Hero = () => {
                 ref={canvasRef}
                 style={{
                     position: "absolute",
-                    borderRadius: "18px",
                     width: "100%",
                     height: "100%",
                     zIndex: 1,

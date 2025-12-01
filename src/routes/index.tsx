@@ -9,6 +9,7 @@ import Intro from "../sections/Intro";
 import Explanation from "../sections/Explanation";
 import Contacts from "../sections/Contacts";
 import { motion } from "motion/react"
+import styles from "./styles/index.module.scss";
 
 export const Route = createFileRoute('/')({
   component: () => <Home />,
@@ -16,33 +17,33 @@ export const Route = createFileRoute('/')({
 
 const Home = () => {
     return (
-        <div id="App">
-      <div style={{ width: "100vw", maxWidth: "100vw", height: "225vh", padding: "2rem", position: "relative" }}>
+        <div id="App" className={styles.app_wrapper}>
+      <div className={styles.section_hero}>
         <Hero />
       </div>
-      <div style={{ width: "100vw", maxWidth: "100vw", height: "100vh", padding: "2rem" }}>
+      <div className={styles.section_text}>
         <Text />
       </div>
-      <div style={{ width: "100vw", maxWidth: "100vw", padding: "2rem" }}>
+      <div className={styles.section}>
           <Explanation />
         </div>
-      <div style={{ width: "100vw", maxWidth: "100vw", padding: "2rem" }} id="kurse">
+      <div className={styles.section} id="kurse">
         <Cards />
       </div>
-      <div style={{ width: "100vw", maxWidth: "100vw", padding: "2rem" }}>
+      <div className={styles.section}>
         <Options />
       </div>
       <motion.div whileInView={{ backgroundColor: "#290d2aff" }} transition={{ duration: .8 }}>
-        <div style={{ width: "100vw", maxWidth: "100vw", padding: "5rem 2rem" }} id="intro">
+        <div className={styles.section_large} id="intro">
           <Intro />
         </div>
-        <div style={{ width: "100vw", maxWidth: "100vw", padding: "5rem 2rem" }} id="kontakt">
+        <div className={styles.section_large} id="kontakt">
           <Contacts />
         </div>
-        <div style={{ width: "100vw", maxWidth: "100vw", padding: "5rem 2rem 2rem" }} id="faq">
+        <div className={styles.section_faq} id="faq">
           <Faq />
         </div>
-        <div style={{ width: "100vw", maxWidth: "100vw", padding: "2rem" }}>
+        <div className={styles.section}>
           <Footer />
         </div>
       </motion.div>

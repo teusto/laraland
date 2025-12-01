@@ -14,3 +14,27 @@
         }
     }
 }
+
+// ============================================
+// RESPONSIVE STYLES - TABLET & MOBILE
+// ============================================
+
+// Mobile (portrait - phones)
+@media (max-width: 480px) {
+    .footer_wrapper {
+        p {
+            font-size: 0.65rem;
+            text-align: center;
+            line-height: 1.5;
+        }
+    }
+}
+
+// Extra small devices
+@media (max-width: 360px) {
+    .footer_wrapper {
+        p {
+            font-size: 0.6rem;
+        }
+    }
+}
