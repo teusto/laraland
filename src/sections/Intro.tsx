@@ -10,7 +10,7 @@ const Intro = () => {
                 <p className={styles.intro_text_title}>Lara Lensdorf<br />Trauma Healing Coach</p>
                 <Link to="/about" className={styles.intro_text_cta}>_Know more about me</Link>
             </motion.div>
-            <video src="" />
+            {/*<video src="" />*/}
         </div>
     )
 }

@@ -32,7 +32,7 @@ const About = () => {
         gsap.to(text1Ref.current, {
             scrollTrigger: {
                 trigger: text1Ref.current,
-                start: "+20%",
+                start: "-20%",
                 scrub: 1,
                 markers: true
             },
@@ -45,7 +45,7 @@ const About = () => {
         gsap.to(text2Ref.current, {
             scrollTrigger: {
                 trigger: text2Ref.current,
-                start: "320%",
+                start: "+300%",
                 scrub: 1,
                 markers: true
             },
@@ -58,7 +58,7 @@ const About = () => {
         gsap.to(text3Ref.current, {
             scrollTrigger: {
                 trigger: text3Ref.current,
-                start: "620%",
+                start: "+600%",
                 scrub: 1,
                 markers: true
             },
@@ -72,7 +72,7 @@ const About = () => {
         gsap.to(finalSectionRef.current, {
             scrollTrigger: {
                 trigger: finalSectionRef.current,
-                start: "820%",
+                start: "+1020%",
                 scrub: 1,
                 markers: true
             },
@@ -91,11 +91,11 @@ const About = () => {
                     <h2 className={styles.about_title}>_Hi im Lara Lensdorf</h2>
                 </div>
                 
-                <p ref={text1Ref} className={styles.about_text}>Ich bin Lara Lensdorf, eine Psychotherapeutin mit einer Leidenschaft für das Wohlbefinden meiner Patienten.</p>
+                <p ref={text1Ref} className={styles.about_text}>With a B.Sc. in Psychology and specialized training in Energetic Emotional Healing, my approach is both intuitive and anchored in nervous system understanding, emotional safety, and deep energetic work.</p>
                 
-                <p ref={text2Ref} className={styles.about_text}>Meine Mission ist es, Ihnen dabei zu helfen, Ihre innere Ruhe zu finden.</p>
+                <p ref={text2Ref} className={styles.about_text}>My work is here to help you break free from what’s holding you back, soothe your nervous system, and step boldly into your inner strength, clarity, and unstoppable power.</p>
                 
-                <p ref={text3Ref} className={styles.about_text}>Ihre Lebensqualität zu verbessern und ein erfülltes Leben zu führen.</p>
+                <p ref={text3Ref} className={styles.about_text}>Through a blend of energy work, somatic regulation, and intuitive guidance, every session is designed to bring you back into alignment — emotionally, energetically, and physically.</p>
             </div>
             
             <div className={styles.final_section} ref={finalSectionRef}>

@@ -30,7 +30,7 @@
             font-family: "nelphim", sans-serif;
         }
         .intro_text_title {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             font-weight: 600;
             font-family: "nelphim", sans-serif;
         } 
@@ -42,15 +42,16 @@
             font-weight: 600;
             font-family: "nelphim", sans-serif;
             border-radius: 12px;
-            padding: 1rem;
+            padding: 1rem 2rem;
             cursor: pointer;
-            background-color: #222222;
+            background-color: #290d2aff;
             color: colors.$text-color-inverse;
             transition: all .2s ease-in-out;
+            box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
             &:hover {
                 transform: translateY(-4px);
-                color: colors.$text-color;
-                background-color: #ffffff;
+                color: colors.$text-color-inverse;
+                background-color: #d15fa0;
             }
         }  
     }

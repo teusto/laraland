@@ -2,10 +2,11 @@ import { useEffect, useRef, useState } from "react";
 import styles from "./styles/hero.module.scss";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Logo from "../assets/images/logo.png"; 
 
 gsap.registerPlugin(ScrollTrigger);
 
-const TOTAL_FRAMES = 225;
+const TOTAL_FRAMES = 125;
 
 const Hero = () => {
     const [images, setImages] = useState([]);
@@ -78,18 +79,18 @@ const Hero = () => {
                 }}
             />
             <div className={styles.hero_logo}>
-                <span>LL</span>
+                <img src={Logo} alt="Logo" />
             </div>
 
             <div className={styles.navbar}>
                     <li onClick={() => window.scrollTo({ top: document.getElementById("intro")?.offsetTop, behavior: "smooth" })}>_Intro</li>
-                    <li onClick={() => window.scrollTo({ top: document.getElementById("kurse")?.offsetTop, behavior: "smooth" })}>_Kurse</li>
-                    <li onClick={() => window.scrollTo({ top: document.getElementById("kontakt")?.offsetTop, behavior: "smooth" })}>_Kontakt</li>
+                    <li onClick={() => window.scrollTo({ top: document.getElementById("kurse")?.offsetTop, behavior: "smooth" })}>_Help</li>
+                    <li onClick={() => window.scrollTo({ top: document.getElementById("kontakt")?.offsetTop, behavior: "smooth" })}>Contact</li>
                     <li onClick={() => window.scrollTo({ top: document.getElementById("faq")?.offsetTop, behavior: "smooth" })}>_FAQ</li>
             </div>
 
             <div className={styles.hero_text}>
-                <h1>Calmverse</h1>
+                <h1>Lara Lensdorf</h1>
                 <p>Die Tür zu deinem Universum  – ein Raum, in dem du deiner inneren Welt begegnen, dich erforschen und Geborgenheit finden darfst. Hier öffnet sich Weite, wo sonst Enge herrscht, und Stille, wo sonst Lärm ist.</p>
             </div>
             

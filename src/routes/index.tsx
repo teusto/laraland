@@ -32,7 +32,7 @@ const Home = () => {
       <div style={{ width: "100vw", maxWidth: "100vw", padding: "2rem" }}>
         <Options />
       </div>
-      <motion.div whileInView={{ backgroundColor: "#000814" }} transition={{ duration: .8 }}>
+      <motion.div whileInView={{ backgroundColor: "#290d2aff" }} transition={{ duration: .8 }}>
         <div style={{ width: "100vw", maxWidth: "100vw", padding: "5rem 2rem" }} id="intro">
           <Intro />
         </div>

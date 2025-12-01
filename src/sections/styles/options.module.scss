@@ -10,6 +10,12 @@
     gap: 2rem;
     margin: 0 auto;
     //box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    
+    &:hover .options_item:not(:hover) {
+        filter: blur(3px);
+        opacity: 0.6;
+    }
+    
     .options_item {
         width: 100%;
         aspect-ratio: 2 / 1.7;
@@ -24,8 +30,8 @@
         justify-content: space-between;
         align-items: left;
         cursor: pointer;
-        transition: all .2s ease-in-out;
-        color: colors.$text-color;
+        transition: all .3s ease-in-out, filter .3s ease-in-out, opacity .3s ease-in-out;
+        text-decoration: none;
         &:hover {
             transform: translateY(-6px);
         }

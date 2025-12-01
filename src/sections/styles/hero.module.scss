@@ -20,19 +20,11 @@
         width: 2.5rem;
         height: 2.5rem;
         border-radius: 12px;
-        background-color: #a6a6a66b;
-        border: 1px solid #ffffff;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: .8rem;
-        font-weight: bold;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
         cursor: pointer;
         z-index: 2;
-        span {
-            color: colors.$text-color-inverse;
-        }
     }
 
     .navbar {
@@ -97,8 +89,8 @@
             &:hover {
                 transform: translateY(-4px);
                 color: colors.$text-color-inverse;
-                background-color: #dc3c3c;
-                border-color: #dc3c3c;
+                background-color: #d15fa0;
+                border-color: #d15fa0;
             }
         }
     }

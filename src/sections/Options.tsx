@@ -1,26 +1,35 @@
 import styles from "./styles/options.module.scss";
 
 const Options = () => {
+    //TODO: Will have one more option
+    const calendlyUrl = "https://calendly.com/laralensdorf/30min";
+    
     return (
         <div className={styles.options_wrapper}>
-            <div className={styles.options_item}>
-                <div className={styles.options_item_title}>15 min</div>
+            <a href={calendlyUrl} target="_blank" rel="noopener noreferrer" className={styles.options_item}>
+                <div className={styles.options_item_title}>60 min</div>
                 <div className={styles.options_item_text}>
-                    <p className={styles.options_item_text_price}>asdadsa<br />$15/week</p>
+                    <p className={styles.options_item_text_price}>Energy Healing Session</p>
                 </div>
-            </div>
-            <div className={styles.options_item}>
-                <div className={styles.options_item_title}>15 min</div>
+            </a>
+            <a href={calendlyUrl} target="_blank" rel="noopener noreferrer" className={styles.options_item}>
+                <div className={styles.options_item_title}>60 min</div>
                 <div className={styles.options_item_text}>
-                    <p className={styles.options_item_text_price}>asdadsa<br />$15/week</p>
+                    <p className={styles.options_item_text_price}>Nervous System Regulation Session</p>
                 </div>
-            </div>
-            <div className={styles.options_item}>
-                <div className={styles.options_item_title}>15 min</div>
+            </a>
+            <a href={calendlyUrl} target="_blank" rel="noopener noreferrer" className={styles.options_item}>
+                <div className={styles.options_item_title}>60 min</div>
                 <div className={styles.options_item_text}>
-                    <p className={styles.options_item_text_price}>asdadsa<br />$15/week</p>
+                    <p className={styles.options_item_text_price}>Psychological Support</p>
                 </div>
-            </div>
+            </a>
+            <a href={calendlyUrl} target="_blank" rel="noopener noreferrer" className={styles.options_item}>
+                <div className={styles.options_item_title}>60 min</div>
+                <div className={styles.options_item_text}>
+                    <p className={styles.options_item_text_price}>Astrological Blueprint Analysis</p>
+                </div>
+            </a>
         </div>
     )
 }

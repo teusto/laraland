@@ -27,8 +27,8 @@
         
         .card {
             position: relative;
-            height: 460px;
-            max-width: 32%;
+            height: 520px;
+            max-width: 38%;
             border-radius: 18px;
             padding: 2rem;
             color: colors.$text-color;
@@ -47,11 +47,21 @@
                 font-weight: 500;
                 font-family: "kollektif", sans-serif;
             }
+            ul{
+                list-style-type: disc;
+                font-size: 1rem;
+                width: 100%;
+                font-weight: 500;
+                font-family: "kollektif", sans-serif;
+                li{
+                    list-style: disc;
+                }
+            }
         }
 
         .card:nth-child(4n + 1),
         .card:nth-child(4n + 4) {
-            max-width: 60%;
+            max-width: 58%;
         }
 
         .card:nth-child(odd) {
@@ -62,15 +72,70 @@
             background-color: #fdebeb;
         }
 
-        .card:nth-child(2) {
-            padding: 0;
-            max-width: 34%;
-            video {
+        .card_wrapper {
+            position: relative;
+            height: 520px;
+            max-width: 38%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .card_half {
+                height: calc(50% - 0.5rem);
                 border-radius: 18px;
-                width: auto;
-                height: 100%;
-                object-fit: cover;
+                padding: 2rem;
+                color: colors.$text-color;
+                box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: left;
+                background-color: #fffcf2;
+
+                h3 {
+                    font-size: 1.2rem;
+                    font-family: "nelphim", sans-serif;
+                }
+                p {
+                    font-size: .85rem;
+                    width: 80%;
+                    font-weight: 500;
+                    font-family: "kollektif", sans-serif;
+                }
+                ul {
+                    list-style-type: disc;
+                    font-size: 1rem;
+                    width: 100%;
+                    font-weight: 500;
+                    font-family: "kollektif", sans-serif;
+                    li {
+                        list-style: disc;
+                    }
+                }
             }
+
+            .card_half_video {
+                height: calc(50% - 0.5rem);
+                border-radius: 18px;
+                overflow: hidden;
+                box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+                background-color: #fdebeb;
+
+                video {
+                    border-radius: 18px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .card_wrapper:nth-child(even) .card_half {
+            background-color: #fdebeb;
+        }
+
+        .card_wrapper:nth-child(even) .card_half_video {
+            background-color: #fffcf2;
         }
     }
 }
