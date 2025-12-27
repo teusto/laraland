@@ -16,7 +16,8 @@ const Hero = () => {
         const frameImages: HTMLImageElement[] = [];
         for (let i = 1; i <= TOTAL_FRAMES; i++) {
             const img = new Image();
-            img.src = `./src/assets/videos/frames/frame_${String(i).padStart(4, "0")}.jpg`;
+            // Use absolute path from public directory (Vite best practice)
+            img.src = `/assets/videos/frames/frame_${String(i).padStart(4, "0")}.jpg`;
             frameImages.push(img);
         }
         setImages(frameImages);
@@ -51,7 +52,30 @@ const Hero = () => {
             const scale = window.devicePixelRatio || 1;
             if(img?.complete){
                 context.clearRect(0, 0, canvas.width, canvas.height);
-                context.drawImage(img, 0, 0, canvas.width / scale, canvas.height / scale);
+                
+                // Implement object-fit: cover behavior
+                const canvasWidth = canvas.width / scale;
+                const canvasHeight = canvas.height / scale;
+                const canvasAspect = canvasWidth / canvasHeight;
+                const imgAspect = img.width / img.height;
+                
+                let drawWidth, drawHeight, offsetX, offsetY;
+                
+                if (imgAspect > canvasAspect) {
+                    // Image is wider - fit to height and crop sides
+                    drawHeight = canvasHeight;
+                    drawWidth = img.width * (canvasHeight / img.height);
+                    offsetX = (canvasWidth - drawWidth) / 2;
+                    offsetY = 0;
+                } else {
+                    // Image is taller - fit to width and crop top/bottom
+                    drawWidth = canvasWidth;
+                    drawHeight = img.height * (canvasWidth / img.width);
+                    offsetX = 0;
+                    offsetY = (canvasHeight - drawHeight) / 2;
+                }
+                
+                context.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
             }
         };
 
@@ -95,7 +119,6 @@ const Hero = () => {
                     <li onClick={() => window.scrollTo({ top: document.getElementById("intro")?.offsetTop, behavior: "smooth" })}>_Intro</li>
                     <li onClick={() => window.scrollTo({ top: document.getElementById("kurse")?.offsetTop, behavior: "smooth" })}>_Help</li>
                     <li onClick={() => window.scrollTo({ top: document.getElementById("kontakt")?.offsetTop, behavior: "smooth" })}>Contact</li>
-                    <li onClick={() => window.scrollTo({ top: document.getElementById("faq")?.offsetTop, behavior: "smooth" })}>_FAQ</li>
             </div>
 
             <div className={styles.hero_text}>
@@ -104,7 +127,7 @@ const Hero = () => {
             </div>
             
             <div className={styles.hero_cta}>
-                <a href="https://calendly.com/laralensdorf/30min" target="_blank" rel="noopener noreferrer" >Jetzt eintreten</a>
+                <a href="https://calendly.com/laralensdorf/30min" target="_blank" rel="noopener noreferrer" >I Want To Evolve</a>
             </div>
         </div>
     )

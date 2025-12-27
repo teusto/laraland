@@ -1,8 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import Hero from "../sections/Hero";
-import Cards from "../sections/Cards";
 import Options from "../sections/Options";
-import Faq from "../sections/Faq";
 import Text from "../sections/Text";
 import Footer from "../sections/Footer";
 import Intro from "../sections/Intro";
@@ -10,6 +8,7 @@ import Explanation from "../sections/Explanation";
 import Contacts from "../sections/Contacts";
 import { motion } from "motion/react"
 import styles from "./styles/index.module.scss";
+import NewCards from "../sections/NewCards";
 
 export const Route = createFileRoute('/')({
   component: () => <Home />,
@@ -28,7 +27,7 @@ const Home = () => {
           <Explanation />
         </div>
       <div className={styles.section} id="kurse">
-        <Cards />
+        <NewCards />
       </div>
       <div className={styles.section}>
         <Options />
@@ -40,9 +39,9 @@ const Home = () => {
         <div className={styles.section_large} id="kontakt">
           <Contacts />
         </div>
-        <div className={styles.section_faq} id="faq">
+        {/* <div className={styles.section_faq} id="faq">
           <Faq />
-        </div>
+        </div> */}
         <div className={styles.section}>
           <Footer />
         </div>

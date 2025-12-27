@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden; // Prevent motion animations from creating black areas
 
     .cards_title {
         font-size: 3rem;

@@ -1,0 +1,16 @@
+@use "../../assets/styles/colors" as colors;
+
+.wrapper {
+    border: 2px solid red;
+    padding: 1rem;
+    .container_services{
+        border: 2px solid green;
+        padding: 2rem;
+        .cards{
+            background-color: #fffcf2;
+            padding: 2rem;
+            border-radius: 18px;
+            color: colors.$text-color;
+        }
+    }
+}

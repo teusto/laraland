@@ -1,7 +1,9 @@
 import styles from "./styles/cards.module.scss";
-import srcVideo from "../assets/videos/other.mp4";
-import srcVideo2 from "../assets/videos/vid2.mp4";
 import { motion } from "motion/react"
+
+// Use absolute paths from public directory for large media files (Vite best practice)
+const srcVideo = "/assets/videos/other.mp4";
+const srcVideo2 = "/assets/videos/vid2.mp4";
 
 const Cards = () => {
     return (

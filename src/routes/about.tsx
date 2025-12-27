@@ -2,116 +2,83 @@ import { createFileRoute } from '@tanstack/react-router';
 import styles from "../sections/styles/about.module.scss";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useRef } from "react";
+import IMG from '../assets/images/img3.jpeg'
+import { useRef } from 'react';
 
-gsap.registerPlugin(useGSAP, ScrollTrigger);
+const AboutImage = "/assets/images/img3.jpeg";
+
+gsap.registerPlugin(useGSAP);
 
 export const Route = createFileRoute('/about')({
     component: () => <About />,
 })
 
 const About = () => {
-    const containerRef = useRef<HTMLDivElement>(null);
-    const titleWrapperRef = useRef<HTMLDivElement>(null);
-    const text1Ref = useRef<HTMLParagraphElement>(null);
-    const text2Ref = useRef<HTMLParagraphElement>(null);
-    const text3Ref = useRef<HTMLParagraphElement>(null);
-    const youTextRef = useRef<HTMLParagraphElement>(null);
-    const finalSectionRef = useRef<HTMLDivElement>(null);
+
+    const revealRef = useRef<HTMLDivElement>(null);
+    const imgRef = useRef<HTMLImageElement>(null);
+    const titleRef = useRef<HTMLHeadingElement>(null);
 
     useGSAP(() => {
-        // Only apply scroll animations on desktop (> 768px)
-        const isMobile = window.matchMedia("(max-width: 768px)").matches;
+        // Timeline configuration
+        const tl = gsap.timeline({ 
+            defaults: { ease: 'power3.inOut' } 
+        });
+
+        // Step 1: Image reveal animation (overlay slides off from left)
+        tl.to(revealRef.current, {
+            '--overlay-scale': 0,          // Animate overlay scale to 0
+            duration: 1.2,                 // Animation duration
+            delay: 0.3                     // Initial delay before animation starts
+        })
         
-        if (isMobile) {
-            // On mobile, just ensure everything is visible
-            gsap.set([titleWrapperRef.current, text1Ref.current, text2Ref.current, text3Ref.current, finalSectionRef.current], {
-                opacity: 1,
-                transform: "none"
-            });
-            return;
-        }
-
-        // Desktop animations
-        gsap.from(titleWrapperRef.current, {
-            yPercent: 170,
-            duration: 1,
-            scale: .85,
-            ease: "power3.out"
-        })
-
-        gsap.to(text1Ref.current, {
-            scrollTrigger: {
-                trigger: text1Ref.current,
-                start: "-20%",
-                scrub: 1,
-                markers: false
-            },
-            xPercent: -150,
-            yPercent: -150,
-            opacity: 1,
-            ease: "power3.out"
-        })
-
-        gsap.to(text2Ref.current, {
-            scrollTrigger: {
-                trigger: text2Ref.current,
-                start: "+300%",
-                scrub: 1,
-            },
-            xPercent: -50,
-            yPercent: -150,
-            opacity: 1,
-            ease: "power3.out"
-        })
-
-        gsap.to(text3Ref.current, {
-            scrollTrigger: {
-                trigger: text3Ref.current,
-                start: "+600%",
-                scrub: 1,
-            },
-            xPercent: 50,
-            yPercent: -150,
-            opacity: 1,
-            duration: 1.5,
-            ease: "power3.out"
-        })
-
-        gsap.to(finalSectionRef.current, {
-            scrollTrigger: {
-                trigger: finalSectionRef.current,
-                start: "+1020%",
-                scrub: 1,
-            },
-            xPercent: -50,
-            yPercent: 170,
-            opacity: 1,
-            duration: 2,
-            ease: "power3.out"
-        })
+        // Step 2: Image scale effect (runs simultaneously with overlay)
+        .from(imgRef.current, {
+            scale: 1.25,                   // Start scaled up
+            duration: 1.2,                 // Match overlay duration
+            ease: 'power2.out'             // Smooth deceleration
+        }, '<')                            // '<' makes it start at the same time as previous animation
+        
+        // Step 3: Title fade-in (runs after image reveal completes)
+        .from(titleRef.current, {
+            opacity: 0,                    // Start invisible
+            y: 10,                         // Start 20px lower
+            duration: 0.8,                 // Fade-in duration
+            ease: 'power2.out'             // Smooth deceleration
+        }, '+.8');                                // No position label = runs after previous animation
     })
 
     return (
-        <div ref={containerRef} className={styles.about}>
-            <div className={styles.scroll_content}>
-                <div ref={titleWrapperRef} className={styles.title_wrapper}>
-                    <h2 className={styles.about_title}>_Hi im Lara Lensdorf</h2>
+        <div className={styles.about}>
+            <section className={styles.top}>
+                <section className={styles.left}>
+                    <div className={styles.image_wrapper} ref={revealRef}>
+                        <img className={styles.img} src={IMG} ref={imgRef} />
+                    </div>
+                </section>
+                <section className={styles.right}>
+                    <div className={styles.about_text_wrapper}>
+                        <p className={styles.about_text}>With a B.Sc. in Psychology and specialized training in Energetic Emotional Healing, my approach is both intuitive and anchored in nervous system understanding, emotional safety, and deep energetic work.</p>
+                        <p className={styles.about_text}>My work is here to help you break free from what’s holding you back, soothe your nervous system, and step boldly into your inner strength, clarity, and unstoppable power.</p>
+                        <p className={styles.about_text}>Through a blend of energy work, somatic regulation, and intuitive guidance, every session is designed to bring you back into alignment — emotionally, energetically, and physically.</p>
+                    </div>
+
+                    <div className={styles.story_wrapper}>
+                        <p>sadasds asd ads da d dasdasdad saasdasdd</p>
+                    </div>
+                </section>
+            </section>
+
+            <section className={styles.bottom}>
+                <div className={styles.title_wrapper}>
+                    <h2 className={styles.about_title} ref={titleRef}>_Hi im Lara Lensdorf</h2>
                 </div>
-                
-                <p ref={text1Ref} className={styles.about_text}>With a B.Sc. in Psychology and specialized training in Energetic Emotional Healing, my approach is both intuitive and anchored in nervous system understanding, emotional safety, and deep energetic work.</p>
-                
-                <p ref={text2Ref} className={styles.about_text}>My work is here to help you break free from what’s holding you back, soothe your nervous system, and step boldly into your inner strength, clarity, and unstoppable power.</p>
-                
-                <p ref={text3Ref} className={styles.about_text}>Through a blend of energy work, somatic regulation, and intuitive guidance, every session is designed to bring you back into alignment — emotionally, energetically, and physically.</p>
-            </div>
-            
-            <div className={styles.final_section} ref={finalSectionRef}>
-                <p ref={youTextRef} className={styles.about_you_text}>Your Turn, Let's break free from what's holding you back. Book a quick introductory session to see how we can support you.</p>
-            
-                <a href="https://calendly.com/laralensdorf/30min" target="_blank" rel="noopener noreferrer" className={styles.contacts_content_cta} >_Book a demo</a>
-            </div>
+
+                <div className={styles.final_section}>
+                    <p className={styles.about_you_text}>Your Turn, Let's break free from what's holding you back. Book a quick introductory session to see how we can support you.</p>
+                    <a href="https://calendly.com/laralensdorf/30min" target="_blank" rel="noopener noreferrer" className={styles.contacts_content_cta} >_Book a introductory session</a>
+                </div>
+            </section>
         </div>
     )
 }
