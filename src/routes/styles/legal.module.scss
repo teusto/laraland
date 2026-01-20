@@ -1,0 +1,62 @@
+@use "../../assets/styles/colors" as colors;
+
+.legal_wrapper {
+    padding: 6rem 2rem;
+    width: 100vw;
+    margin: 0 auto;
+    color: colors.$text-color;
+    font-family: "kollektif", sans-serif;
+    background-color: colors.$background-color;
+
+    h1 {
+        font-family: "nelphim", sans-serif;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        color: colors.$text-color;
+    }
+
+    section {
+        margin-bottom: 2.5rem;
+        width: 60%;
+
+        h2 {
+            font-family: "nelphim", sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: colors.$text-color;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+            
+            a {
+                color: colors.$text-color;
+                text-decoration: underline;
+                transition: color 0.2s ease;
+                
+                &:hover {
+                    color: #E83B3A;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .legal_wrapper {
+        padding: 4rem 1.5rem;
+        
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        section {
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

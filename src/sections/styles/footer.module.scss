@@ -1,6 +1,10 @@
 @use "../../assets/styles/colors" as colors;
 
 .footer_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     p {
         font-size: .7rem;
         font-weight: 500;
@@ -13,6 +17,23 @@
             cursor: pointer;
         }
     }
+    .footer_links {
+        display: flex;
+        gap: 1.5rem;
+
+        .link {
+            text-decoration: none;
+            font-size: .7rem;
+            font-weight: 500;
+            color: colors.$text-color-inverse;
+            font-family: "nelphim", sans-serif;
+            transition: color 0.2s ease;
+
+            &:hover {
+                color: #E83B3A;
+            }
+        }
+    }
 }
 
 // ============================================
@@ -22,11 +43,30 @@
 // Mobile (portrait - phones)
 @media (max-width: 480px) {
     .footer_wrapper {
+        display: flex;
+        flex-direction: column;
         p {
             font-size: 0.65rem;
             text-align: center;
             line-height: 1.5;
+            margin-bottom: .5rem;
         }
+        .footer_links {
+        display: flex;
+        gap: .5rem;
+        .link {
+            text-decoration: none;
+            font-size: .6rem;
+            font-weight: 500;
+            color: colors.$text-color-inverse;
+            font-family: "nelphim", sans-serif;
+            transition: color 0.2s ease;
+
+            &:hover {
+                color: #E83B3A;
+            }
+        }
+    }
     }
 }
 

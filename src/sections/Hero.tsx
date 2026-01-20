@@ -43,6 +43,8 @@ const Hero = () => {
 
         updateCanvasSize();
 
+        window.addEventListener('resize', updateCanvasSize);
+
         const frameState = {
             frame: 0
         }
@@ -79,21 +81,42 @@ const Hero = () => {
             }
         };
 
-        gsap.to(frameState, {
-            frame: TOTAL_FRAMES - 1,
-            snap: "frame",
-            ease: "none",
-            scrollTrigger: {
-                start: "top top",
-                end: "900px",
-                scrub: true,
-            },
-            onUpdate: render,
+        const mm = gsap.matchMedia();
+
+        // Desktop: Scroll-bound animation (min-width: 769px to match CSS breakpoint)
+        mm.add("(min-width: 769px)", () => {
+            gsap.to(frameState, {
+                frame: TOTAL_FRAMES - 1,
+                snap: "frame",
+                ease: "none",
+                scrollTrigger: {
+                    start: "top top",
+                    end: "900px",
+                    scrub: true,
+                },
+                onUpdate: render,
+            });
+        });
+
+        // Mobile: Autoplay animation (max-width: 768px to match CSS breakpoint)
+        mm.add("(max-width: 768px)", () => {
+            gsap.to(frameState, {
+                frame: TOTAL_FRAMES - 1,
+                snap: "frame",
+                ease: "none",
+                duration: 4, // Play sequence over 4 seconds
+                onUpdate: render,
+            });
         });
 
         images[0].onload = render;
         if(images[0].complete){
             render();
+        };
+
+        return () => {
+            window.removeEventListener('resize', updateCanvasSize);
+            mm.revert();
         };
 
     }, [images]);
@@ -116,14 +139,18 @@ const Hero = () => {
             </div>
 
             <div className={styles.navbar}>
-                    <li onClick={() => window.scrollTo({ top: document.getElementById("intro")?.offsetTop, behavior: "smooth" })}>_Intro</li>
-                    <li onClick={() => window.scrollTo({ top: document.getElementById("kurse")?.offsetTop, behavior: "smooth" })}>_Help</li>
+                    <li onClick={() => window.scrollTo({ top: document.getElementById("intro")?.offsetTop, behavior: "smooth" })}>Intro</li>
+                    <li onClick={() => window.scrollTo({ top: document.getElementById("kurse")?.offsetTop, behavior: "smooth" })}>Help</li>
                     <li onClick={() => window.scrollTo({ top: document.getElementById("kontakt")?.offsetTop, behavior: "smooth" })}>Contact</li>
             </div>
 
             <div className={styles.hero_text}>
-                <h1>Lara Lensdorf</h1>
-                <p>Die Tür zu deinem Universum  – ein Raum, in dem du deiner inneren Welt begegnen, dich erforschen und Geborgenheit finden darfst. Hier öffnet sich Weite, wo sonst Enge herrscht, und Stille, wo sonst Lärm ist.</p>
+                <h1>LARA LENSDORF</h1>
+                <p>
+                    Your safe space for inner exploration and healing — where you are supported in reconnecting with yourself. Here, tension softens into openness, and inner noise gives way to clarity and calm.
+                    <br />
+                    Sessions in English and German
+                </p>
             </div>
             
             <div className={styles.hero_cta}>

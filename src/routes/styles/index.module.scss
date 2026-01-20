@@ -1,19 +1,10 @@
 // Main layout styles with responsive padding
 
-.app_wrapper {
-    width: 100vw;
-    max-width: 100vw;
-}
-
 .section {
-    width: 100vw;
-    max-width: 100vw;
     padding: 2rem;
 }
 
 .section_hero {
-    width: 100vw;
-    max-width: 100vw;
     height: 225vh;
     padding: 2rem;
     position: relative;
@@ -64,11 +55,20 @@
     .section,
     .section_hero,
     .section_text {
-        padding: 1rem;
+        padding: .65rem;
+    }
+
+    .section_hero {
+        padding-bottom: 0;
+        height: auto;
+    }
+
+    .section_text {
+        padding-top: 0;
     }
 
     .section_large {
-        padding: 3rem 1rem;
+        padding: 5rem 1rem;
     }
 
     .section_faq {
@@ -86,24 +86,33 @@
     .section,
     .section_hero,
     .section_text {
-        padding: 0.5rem;
-    }
-
-    .section_large {
-        padding: 2rem 0.5rem;
-    }
-
-    .section_faq {
-        padding: 2rem 0.5rem 0.5rem;
+        padding: 0.25rem;
     }
 
     .section_hero {
-        height: 200vh;
+        padding-bottom: 0;
+    }
+
+    .section_text {
+        padding-top: 0;
+    }
+
+    .section_large {
+        padding: 5rem 0.25rem;
+    }
+
+    .section_faq {
+        padding: 2rem 0.25rem 0.25rem;
+    }
+
+    .section_hero {
+        height: auto;
     }
 
     .section_text {
         height: auto;
         min-height: 50vh;
+        margin-bottom: 2rem;
     }
 }
 
@@ -116,7 +125,7 @@
     }
 
     .section_large {
-        padding: 1.5rem 0.25rem;
+        padding: 3rem 0.25rem;
     }
 
     .section_faq {
@@ -124,7 +133,7 @@
     }
 
     .section_hero {
-        height: 180vh;
+        height: auto;
     }
 
     .section_text {

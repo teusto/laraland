@@ -17,7 +17,7 @@
         flex: 2;
 
         .left {
-
+            flex: .4;
             .image_wrapper {
                 position: relative;
                 width: 100%;
@@ -42,21 +42,26 @@
                     height: auto;
                 }
             }
+            
+            .title_wrapper_mobile {
+                display: none;
+            }
         }
 
         .right {
+            flex: 1;
             display: flex;
             align-items: center;
             gap: 2rem;
-            justify-content: center;
             flex-direction: column;
-            height: 100%;
+            gap: 4rem;
 
             .about_text_wrapper {
                 width: 100%;
                 display: flex;
                 justify-content: center;
                 gap: 2rem;
+                font-family: "kollektif", sans-serif;
 
                 .about_text {
                     color: colors.$text-color;
@@ -68,6 +73,7 @@
                 color: colors.$text-color;
                 width: 100%;
                 margin-left: 2rem;
+                font-family: "kollektif", sans-serif;
             }
         }
     }
@@ -78,9 +84,12 @@
         flex: 1;
 
         .title_wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             .about_title {
                 color: colors.$text-color;
-                font-size: 4.5rem;
+                font-size: 5rem;
                 font-family: "nelphim", sans-serif;
             }
         }
@@ -88,17 +97,19 @@
         .final_section {
             background-color: colors.$text-color;
             color: colors.$text-color-inverse;
-            width: 35%;
-            padding: 2rem;
+            width: 30%;
+            padding: 1rem;
             border-radius: 18px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-around;
             opacity: .5;
             box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 
             .about_you_text {
                 font-weight: 600;
+                text-align: center;
+                font-family: "kollektif", sans-serif;
             }
 
             .contacts_content_cta {
@@ -106,12 +117,85 @@
                 background-color: colors.$background-color;
                 border-radius: 12px;
                 font-family: "nelphim", sans-serif;
-                padding: 1rem 2rem;
+                padding: 1rem;
                 text-align: center;
                 cursor: pointer;
                 color: colors.$text-color;
                 transition: all .2s ease-in-out;
                 box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .about {
+        height: auto;
+        min-height: 100vh;
+        padding: 1.5rem;
+        gap: 3rem;
+
+        .top {
+            flex-direction: column;
+            gap: 2rem;
+            
+            .left {
+                width: 100%;
+                .image_wrapper {
+                    width: 100%;
+                }
+                
+                .title_wrapper_mobile {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 1.5rem;
+                    
+                    .about_title {
+                        color: colors.$text-color;
+                        font-size: 3rem;
+                        font-family: "nelphim", sans-serif;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .right {
+                width: 100%;
+                gap: 2rem;
+
+                .about_text_wrapper {
+                    flex-direction: column;
+                    gap: 1.5rem;
+                    
+                    .about_text {
+                        width: 100%;
+                        font-size: 1rem;
+                        text-align: left;
+                    }
+                }
+
+                .story_wrapper {
+                    margin-left: 0;
+                    p {
+                         font-size: 1rem;
+                         text-align: left;
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            flex-direction: column;
+            gap: 3rem;
+            
+            .title_wrapper {
+                display: none;
+            }
+
+            .final_section {
+                width: 100%;
+                padding: 1.5rem;
+                gap: 1.5rem;
             }
         }
     }

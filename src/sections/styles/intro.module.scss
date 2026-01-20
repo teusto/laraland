@@ -51,7 +51,7 @@
             &:hover {
                 transform: translateY(-4px);
                 color: colors.$text-color-inverse;
-                background-color: #d15fa0;
+                background-color: #1cbfaf;
             }
         }  
     }
@@ -133,8 +133,8 @@
 @media (max-width: 480px) {
     .intro_wrapper {
         .intro_text {
-            width: 95%;
-            padding: 1.25rem;
+            width: 100%;
+            padding: 1rem;
             padding-bottom: 3.5rem;
             border-radius: 12px;
 

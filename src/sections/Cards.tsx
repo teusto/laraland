@@ -8,7 +8,7 @@ const srcVideo2 = "/assets/videos/vid2.mp4";
 const Cards = () => {
     return (
         <div className={styles.cards_wrapper}>
-            <h2 className={styles.cards_title}>_How I Can Help You</h2>
+            <h2 className={styles.cards_title}>How I Can Help You</h2>
             <ul className={styles.card_list}>
                 <li className={styles.card}>
                     <h3>1. Energy Healing Session</h3>

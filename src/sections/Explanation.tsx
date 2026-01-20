@@ -5,7 +5,7 @@ const Explanation = () => {
     //TODO: This will transform in pictures probably
     return (
         <div className={styles.explanation_wrapper}>
-            <h2>_What My Work Helps With?</h2>
+            <h2>What My Work Helps With?</h2>
             <div className={styles.explanation_container}>
                 <motion.div className={styles.explanation_item} initial={{ opacity: 0, y: 60 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
                     <h3>Emotional overwhelm & stress</h3>

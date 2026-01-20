@@ -1,16 +1,122 @@
 @use "../../assets/styles/colors" as colors;
 
 .wrapper {
-    border: 2px solid red;
-    padding: 1rem;
-    .container_services{
-        border: 2px solid green;
-        padding: 2rem;
-        .cards{
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    .container_services {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .cards_wrapper_bottom {
+            display: flex;
+            gap: 1.5rem;
+            max-height: 40rem;
+
+            .cards {
+                flex: 1;
+                min-width: 0;
+                width: 50%;
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                overflow: hidden;
+            }
+        }
+
+        .cards {
             background-color: #fffcf2;
-            padding: 2rem;
-            border-radius: 18px;
+            padding: 3rem;
+            border-radius: 20px;
             color: colors.$text-color;
+            transition: transform 0.2s ease;
+            position: relative;
+            font-family: "kollektif", sans-serif;
+
+            // Ensure images fill their container nicely
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 12px;
+                display: block;
+            }
+
+            h3 {
+                font-size: 2.2rem;
+                font-family: "nelphim", sans-serif;
+                margin: 0;
+                font-weight: normal;
+                line-height: 1.2;
+            }
+
+            p {
+                font-size: 1.15rem;
+                line-height: 1.7;
+                margin: 0;
+            }
+
+            ul {
+                padding-left: 1.2rem;
+                margin-top: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                gap: 0.8rem;
+                
+                li {
+                    font-size: 1.15rem;
+                    line-height: 1.5;
+                    padding-left: 0.5rem;
+                }
+            }
         }
     }
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        padding: 3rem .5rem;
+        gap: 5rem;
+
+        .container_services {
+            .cards_wrapper_bottom {
+                flex-direction: column;
+                gap: 1.5rem;
+                height: auto;
+                max-height: none;
+                
+                .cards {
+                    width: 100%;
+                    overflow: visible;
+                }
+            }
+            
+            .cards {
+                height: auto;
+                
+                h3 {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+
+    .cards_media {
+        padding: 0 !important;
+        object-fit: cover;
+        object-position: center;
+        height: 4rem;
+    }
+}
+
+.cards_media {
+  padding: 0 !important;
+  object-fit: cover;
+  object-position: center;
 }

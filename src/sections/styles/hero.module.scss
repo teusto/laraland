@@ -65,10 +65,11 @@
             font-size: 6rem;
             font-family: "nelphim", sans-serif;
             font-weight: normal;
+            margin-bottom: 1rem;
         }
         p {
             font-size: 1rem;
-            width: 60%;
+            width: 55%;
             margin: auto;
             font-family: "kollektif", sans-serif;
         }
@@ -89,7 +90,7 @@
             display: block;
             text-align: center;
             width: 100%;
-            padding: 1rem;
+            padding: .8rem 1rem;
             background-color: #ffffff;
             color: colors.$text-color;
             border: 1px solid #ffffff;
@@ -101,8 +102,8 @@
             &:hover {
                 transform: translateY(-4px);
                 color: colors.$text-color-inverse;
-                background-color: #d15fa0;
-                border-color: #d15fa0;
+                background-color: #1cbfaf;
+                border-color: #1cbfaf;
             }
         }
     }
@@ -164,6 +165,7 @@
 // Mobile (landscape)
 @media (max-width: 768px) {
     .hero_wrapper {
+        position: relative;
         top: 0.5rem;
         height: 80vh;
 
@@ -183,8 +185,8 @@
             justify-content: flex-end;
             
             li {
-                font-size: 0.6rem;
-                letter-spacing: -0.5px;
+                font-size: 0.8rem;
+                font-weight: bold;
             }
         }
 
@@ -218,20 +220,21 @@
 // Mobile (portrait - phones)
 @media (max-width: 480px) {
     .hero_wrapper {
-        top: 0.5rem;
-        height: 95vh;
-        border-radius: 6px;
+        top: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        border-radius: 0 0 6px 6px; // keep rounded corners at bottom only or remove completely if desired
         display: flex;
 
         canvas {
-            border-radius: 6px;
+            border-radius: 0 0 6px 6px;
         }
 
         .hero_logo {
             top: 1rem;
             left: 1rem;
-            width: 1.5rem;
-            height: 1.5rem;
+            width: 2rem;
+            height: 2rem;
             border-radius: 8px;
         }
 
@@ -246,8 +249,7 @@
             width: 20%;
             
             li {
-                font-size: 0.55rem;
-                letter-spacing: -0.3px;
+                font-size: 0.85rem;
                 padding: 0.2rem 0.4rem;
             }
         }
