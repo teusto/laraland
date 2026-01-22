@@ -85,12 +85,12 @@ const About = () => {
 
             <section className={styles.bottom}>
                 <div className={styles.title_wrapper}>
-                    <h2 className={styles.about_title} ref={titleRef}>_Hi im Lara Lensdorf</h2>
+                    <h2 className={styles.about_title} ref={titleRef}>Hi im Lara Lensdorf</h2>
                 </div>
 
                 <div className={styles.final_section}>
                     <p className={styles.about_you_text}>Your Turn, Let's break free from what's holding you back. Book a quick introductory session to see how we can support you.</p>
-                    <a href="https://calendly.com/laralensdorf/30min" target="_blank" rel="noopener noreferrer" className={styles.contacts_content_cta} >_Book a introductory session</a>
+                    <a href="https://calendly.com/laralensdorf/30min" target="_blank" rel="noopener noreferrer" className={styles.contacts_content_cta} >Book a introductory session</a>
                 </div>
             </section>
         </div>
