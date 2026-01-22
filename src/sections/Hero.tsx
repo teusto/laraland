@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import styles from "./styles/hero.module.scss";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "@tanstack/react-router";
 import Logo from "../assets/images/logo.png"; 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -142,13 +143,14 @@ const Hero = () => {
                     <li onClick={() => window.scrollTo({ top: document.getElementById("intro")?.offsetTop, behavior: "smooth" })}>Intro</li>
                     <li onClick={() => window.scrollTo({ top: document.getElementById("kurse")?.offsetTop, behavior: "smooth" })}>Help</li>
                     <li onClick={() => window.scrollTo({ top: document.getElementById("kontakt")?.offsetTop, behavior: "smooth" })}>Contact</li>
+                    <li><Link to="/about">About</Link></li>
             </div>
 
             <div className={styles.hero_text}>
                 <h1>LARA LENSDORF</h1>
                 <p>
                     Your safe space for inner exploration and healing — where you are supported in reconnecting with yourself. Here, tension softens into openness, and inner noise gives way to clarity and calm.
-                    <br />
+                    <br /><br />
                     Sessions in English and German
                 </p>
             </div>

@@ -48,7 +48,11 @@
             cursor: pointer;
             transition: all .2s ease-in-out;
             color: colors.$text-color-inverse;
-            mix-blend-mode: difference;
+            text-decoration: none;
+            a {
+                text-decoration: none;
+                color: colors.$text-color-inverse;
+            }
             &:hover {
                 text-decoration: underline;
                 transform: translateY(-2px);

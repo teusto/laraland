@@ -7,25 +7,25 @@ const Options = () => {
     return (
         <div className={styles.options_wrapper}>
             <a href={calendlyUrl} target="_blank" rel="noopener noreferrer" className={styles.options_item}>
-                <div className={styles.options_item_title}>60 min</div>
+                <div className={styles.options_item_title}>Schedule Now</div>
                 <div className={styles.options_item_text}>
                     <p className={styles.options_item_text_price}>Energy Healing Session</p>
                 </div>
             </a>
             <a href={calendlyUrl} target="_blank" rel="noopener noreferrer" className={styles.options_item}>
-                <div className={styles.options_item_title}>60 min</div>
+                <div className={styles.options_item_title}>Schedule Now</div>
                 <div className={styles.options_item_text}>
                     <p className={styles.options_item_text_price}>Nervous System Regulation Session</p>
                 </div>
             </a>
             <a href={calendlyUrl} target="_blank" rel="noopener noreferrer" className={styles.options_item}>
-                <div className={styles.options_item_title}>60 min</div>
+                <div className={styles.options_item_title}>Schedule Now</div>
                 <div className={styles.options_item_text}>
                     <p className={styles.options_item_text_price}>Psychological Support</p>
                 </div>
             </a>
             <a href={calendlyUrl} target="_blank" rel="noopener noreferrer" className={styles.options_item}>
-                <div className={styles.options_item_title}>60 min</div>
+                <div className={styles.options_item_title}>Schedule Now</div>
                 <div className={styles.options_item_text}>
                     <p className={styles.options_item_text_price}>Astrological Blueprint Analysis</p>
                 </div>
