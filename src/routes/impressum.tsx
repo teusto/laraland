@@ -17,8 +17,8 @@ function Impressum() {
         <h2>Angaben gemäß § 5 TMG</h2>
         <p>
           Lara Lensdorf<br />
-          Fürstenbergstraße 21B<br />
-          33102 Paderborn<br />
+          <br />
+          <br />
           Germany
         </p>
       </section>

@@ -20,7 +20,7 @@ const NewCards = () => {
                 </div>
                 <div className={styles.cards_wrapper_bottom}>
                     <div className={styles.cards}>
-                        <h3>1. You're a good fit for this session if:</h3>
+                        <h3>You're a good fit for this session if:</h3>
                         <ul>
                             <li>You feel emotionally overwhelmed</li>
                             <li>Your body feels tense, heavy, or "on edge"</li>
@@ -48,7 +48,7 @@ const NewCards = () => {
                 <div className={styles.cards_wrapper_bottom}>
 
                     <div className={styles.cards}>
-                        <h3>2. This is perfect for:</h3>
+                        <h3>This is perfect for:</h3>
                         <ul>
                             <li>Chronic stress or overwhelm</li>
                             <li>Emotional reactivity</li>
@@ -77,7 +77,7 @@ const NewCards = () => {
                 <div className={styles.cards_wrapper_bottom}>
 
                     <div className={styles.cards}>
-                        <h3>3. This session is for you if you want:</h3>
+                        <h3>This session is for you if you want:</h3>
                         <ul>
                             <li>Someone who listens</li>
                             <li>support that is both psychological and intuitive</li>
@@ -107,7 +107,7 @@ const NewCards = () => {
                 <div className={styles.cards_wrapper_bottom}>
 
                     <div className={styles.cards}>
-                        <h3>4. In this session, we explore:</h3>
+                        <h3>In this session, we explore:</h3>
                         <ul>
                             <li>Your emotional energy – understanding your triggers and somatic patterns</li>
                             <li>Your natural strengths & expression –  how you shine authentically</li>

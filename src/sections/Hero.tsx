@@ -107,6 +107,7 @@ const Hero = () => {
                 ease: "none",
                 duration: 4, // Play sequence over 4 seconds
                 onUpdate: render,
+                repeat: -1,
             });
         });
 
