@@ -15,6 +15,11 @@
             font-weight: bold;
             color: #E83B3A;
             cursor: pointer;
+            text-decoration: none;
+            a {
+                text-decoration: none;
+                color: #E83B3A;
+            }
         }
     }
     .footer_links {
