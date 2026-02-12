@@ -150,14 +150,14 @@ const Hero = () => {
             <div className={styles.hero_text}>
                 <h1>LARA LENSDORF</h1>
                 <p>
-                    Your safe space for inner exploration and healing — where you are supported in reconnecting with yourself. Here, tension softens into openness, and inner noise gives way to clarity and calm.
+                    Helping women feel calm, grounded, and clear-minded through psychology-informed, trauma-aware energy and nervous system work.
                     <br /><br />
                     Sessions in English and German
                 </p>
             </div>
             
             <div className={styles.hero_cta}>
-                <a href="https://calendly.com/laralensdorf/30min" target="_blank" rel="noopener noreferrer" >I Want To Evolve</a>
+                <a href="https://calendly.com/laralensdorf/30min" target="_blank" rel="noopener noreferrer" >Book your free clarity call</a>
             </div>
         </div>
     )

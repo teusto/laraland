@@ -15,8 +15,8 @@ export const Route = createFileRoute('/')({
 })
 
 const Home = () => {
-    return (
-        <div id="App" className={styles.app_wrapper}>
+  return (
+    <div id="App" className={styles.app_wrapper}>
       <div className={styles.section_hero}>
         <Hero />
       </div>
@@ -24,8 +24,8 @@ const Home = () => {
         <Text />
       </div>
       <div className={styles.section}>
-          <Explanation />
-        </div>
+        <Explanation />
+      </div>
       <div className={styles.section} id="kurse">
         <NewCards />
       </div>
@@ -47,5 +47,5 @@ const Home = () => {
         </div>
       </motion.div>
     </div>
-    )
+  )
 }

@@ -8,22 +8,22 @@ const Explanation = () => {
             <h2>What My Work Helps With:</h2>
             <div className={styles.explanation_container}>
                 <motion.div className={styles.explanation_item} initial={{ opacity: 0, y: 60 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
-                    <h3>Emotional overwhelm & stress</h3>
+                    <h3>Feeling constantly overstimulated and exhausted.</h3>
                 </motion.div>
                 <motion.div className={styles.explanation_item} initial={{ opacity: 0, y: -60 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
-                    <h3>Nervous system dysregulation</h3>
+                    <h3>A nervous system that’s always on edge.</h3>
                 </motion.div>
                 <motion.div className={styles.explanation_item} initial={{ opacity: 0, y: 60 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
-                    <h3>Inner blocks & stuck energy</h3>
+                    <h3>Stuck energy and inner blocks that hold you back.</h3>
                 </motion.div>
                 <motion.div className={styles.explanation_item} initial={{ opacity: 0, y: -60 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
-                    <h3>Disconnection from the body</h3>
+                    <h3>Disconnection from your body and intuition.</h3>
                 </motion.div>
                 <motion.div className={styles.explanation_item} initial={{ opacity: 0, y: 60 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
-                    <h3>Low emotional resilience</h3>
+                    <h3>Fragile emotional resilience, easily triggered.</h3>
                 </motion.div>
                 <motion.div className={styles.explanation_item} initial={{ opacity: 0, y: -60 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
-                    <h3>Feeling lost or out of alignment</h3>
+                    <h3>Feeling lost, out of alignment, or unsure of who you are.</h3>
                 </motion.div>
             </div>
         </div>
