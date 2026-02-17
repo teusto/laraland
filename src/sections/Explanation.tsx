@@ -1,30 +1,21 @@
 import { motion } from "motion/react"
 import styles from "./styles/explanation.module.scss"
+import { useLocale } from "../i18n/LocaleContext"
 
 const Explanation = () => {
     //TODO: This will transform in pictures probably
+    const { t, tArray } = useLocale();
+    const items = tArray("explanation.items");
+    const directions = [60, -60, 60, -60, 60, -60];
     return (
         <div className={styles.explanation_wrapper}>
-            <h2>What My Work Helps With:</h2>
+            <h2>{t("explanation.heading")}</h2>
             <div className={styles.explanation_container}>
-                <motion.div className={styles.explanation_item} initial={{ opacity: 0, y: 60 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
-                    <h3>Feeling constantly overstimulated and exhausted.</h3>
-                </motion.div>
-                <motion.div className={styles.explanation_item} initial={{ opacity: 0, y: -60 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
-                    <h3>A nervous system that’s always on edge.</h3>
-                </motion.div>
-                <motion.div className={styles.explanation_item} initial={{ opacity: 0, y: 60 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
-                    <h3>Stuck energy and inner blocks that hold you back.</h3>
-                </motion.div>
-                <motion.div className={styles.explanation_item} initial={{ opacity: 0, y: -60 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
-                    <h3>Disconnection from your body and intuition.</h3>
-                </motion.div>
-                <motion.div className={styles.explanation_item} initial={{ opacity: 0, y: 60 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
-                    <h3>Fragile emotional resilience, easily triggered.</h3>
-                </motion.div>
-                <motion.div className={styles.explanation_item} initial={{ opacity: 0, y: -60 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
-                    <h3>Feeling lost, out of alignment, or unsure of who you are.</h3>
-                </motion.div>
+                {items.map((item, i) => (
+                    <motion.div key={i} className={styles.explanation_item} initial={{ opacity: 0, y: directions[i] }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
+                        <h3>{item}</h3>
+                    </motion.div>
+                ))}
             </div>
         </div>
     )

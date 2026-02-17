@@ -4,6 +4,8 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import IMG from '../assets/images/img3.jpeg'
 import { useRef } from 'react';
+import { useLocale } from '../i18n/LocaleContext';
+import LanguageSwitcher from '../i18n/LanguageSwitcher';
 
 //const AboutImage = "/assets/images/img3.jpeg";
 
@@ -14,6 +16,8 @@ export const Route = createFileRoute('/about')({
 })
 
 const About = () => {
+    const { t, tArray } = useLocale();
+    const paragraphs = tArray("about.paragraphs");
 
     const revealRef = useRef<HTMLDivElement>(null);
     const imgRef = useRef<HTMLImageElement>(null);
@@ -51,46 +55,39 @@ const About = () => {
 
     return (
         <div className={styles.about}>
+            <div style={{ position: 'fixed', top: '1rem', right: '1rem', zIndex: 100 }}>
+                <LanguageSwitcher />
+            </div>
             <section className={styles.top}>
                 <section className={styles.left}>
                     <div className={styles.image_wrapper} ref={revealRef}>
                         <img className={styles.img} src={IMG} ref={imgRef} />
                     </div>
                     <div className={styles.title_wrapper_mobile}>
-                        <h2 className={styles.about_title} ref={titleMobileRef}>Hi im Lara Lensdorf</h2>
+                        <h2 className={styles.about_title} ref={titleMobileRef}>{t("about.titleMobile")}</h2>
                     </div>
                 </section>
                 <section className={styles.right}>
                     <div className={styles.about_text_wrapper}>
-                        <p className={styles.about_text}>I didn’t choose this work because it is trendy or spiritual.
-                            I choose it because I live it.
-                            <br />
-                            For years, I experienced firsthand how unresolved emotional patterns, chronic stress, and unregulated nervous system states quietly shape our lives, our relationships, our bodies, and the way we show up in the world. I also learned that insight alone is not enough. Real change happens when the body feels safe enough to let go.</p>
-                        <p className={styles.about_text}>My background in psychology, combined with specialized training in energetic and emotional healing, allows me to work on multiple levels at once: cognitive understanding, nervous system regulation, emotional processing, and subtle energetic alignment. This creates a grounded, safe, and deeply effective space for transformation.</p>
-                        <p className={styles.about_text}>My sensititve and intuitive approach helps me detect what is present in your body while keeping the pace that respects your system and your boundaries.
-                            <br />
-                            <br />
-                            This work is not about fixing you.
-                            It is about helping you release what no longer belongs to you, regulate your nervous system, and reconnect with your inner clarity, strength, and self trust.</p>
+                        {paragraphs.map((p, i) => (
+                            <p key={i} className={styles.about_text} dangerouslySetInnerHTML={{ __html: p }} />
+                        ))}
                     </div>
 
                     <div className={styles.story_wrapper}>
-                        <p>Every session is individualized. No formulas, no pressure, no performance.
-                            Just honest presence, deep listening, and precise energetic and emotional work, so you can move forward feeling more grounded, aligned, and connected to yourself.
-
-                            If you feel called to this work, it is usually because a part of you already knows something is ready to shift. I am more than happy to meet you!</p>
+                        <p>{t("about.story")}</p>
                     </div>
                 </section>
             </section>
 
             <section className={styles.bottom}>
                 <div className={styles.title_wrapper}>
-                    <h2 className={styles.about_title} ref={titleRef}>Hi im Lara Lensdorf</h2>
+                    <h2 className={styles.about_title} ref={titleRef}>{t("about.titleDesktop")}</h2>
                 </div>
 
                 <div className={styles.final_section}>
-                    <p className={styles.about_you_text}>Your Turn, Let's break free from what's holding you back. Book a quick introductory session to see how we can support you.</p>
-                    <a href="https://calendly.com/laralensdorf/30min" target="_blank" rel="noopener noreferrer" className={styles.contacts_content_cta} >Book a introductory session</a>
+                    <p className={styles.about_you_text}>{t("about.finalText")}</p>
+                    <a href="https://calendly.com/laralensdorf/30min" target="_blank" rel="noopener noreferrer" className={styles.contacts_content_cta} >{t("about.finalCta")}</a>
                 </div>
             </section>
         </div>

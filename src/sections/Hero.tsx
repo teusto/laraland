@@ -3,14 +3,18 @@ import styles from "./styles/hero.module.scss";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "@tanstack/react-router";
-import Logo from "../assets/images/logo.png"; 
+import Logo from "../assets/images/logo.png";
+import { useLocale } from "../i18n/LocaleContext";
+import LanguageSwitcher from "../i18n/LanguageSwitcher";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const TOTAL_FRAMES = 217;
 
 const Hero = () => {
+    const { t } = useLocale();
     const [images, setImages] = useState<HTMLImageElement[]>([]);
+    const [menuOpen, setMenuOpen] = useState(false);
     const canvasRef = useRef<HTMLCanvasElement>(null);
 
     useEffect(() => {
@@ -141,23 +145,38 @@ const Hero = () => {
             </div>
 
             <div className={styles.navbar}>
-                    <li onClick={() => window.scrollTo({ top: document.getElementById("intro")?.offsetTop, behavior: "smooth" })}>Intro</li>
-                    <li onClick={() => window.scrollTo({ top: document.getElementById("kurse")?.offsetTop, behavior: "smooth" })}>Help</li>
-                    <li onClick={() => window.scrollTo({ top: document.getElementById("kontakt")?.offsetTop, behavior: "smooth" })}>Contact</li>
-                    <li><Link to="/about">About</Link></li>
+                    <li onClick={() => window.scrollTo({ top: document.getElementById("kurse")?.offsetTop, behavior: "smooth" })}>{t("hero.nav.help")}</li>
+                    <li onClick={() => window.scrollTo({ top: document.getElementById("kontakt")?.offsetTop, behavior: "smooth" })}>{t("hero.nav.contact")}</li>
+                    <li><Link to="/about">{t("hero.nav.about")}</Link></li>
+                    <li><LanguageSwitcher /></li>
             </div>
 
+            <button className={styles.hamburger} onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
+                <span /><span /><span />
+            </button>
+
+            {menuOpen && (
+                <div className={styles.mobile_overlay} onClick={() => setMenuOpen(false)}>
+                    <div className={styles.mobile_menu} onClick={(e) => e.stopPropagation()}>
+                        <li onClick={() => { setMenuOpen(false); window.scrollTo({ top: document.getElementById("kurse")?.offsetTop, behavior: "smooth" }); }}>{t("hero.nav.help")}</li>
+                        <li onClick={() => { setMenuOpen(false); window.scrollTo({ top: document.getElementById("kontakt")?.offsetTop, behavior: "smooth" }); }}>{t("hero.nav.contact")}</li>
+                        <li onClick={() => setMenuOpen(false)}><Link to="/about">{t("hero.nav.about")}</Link></li>
+                        <li><LanguageSwitcher /></li>
+                    </div>
+                </div>
+            )}
+
             <div className={styles.hero_text}>
-                <h1>LARA LENSDORF</h1>
+                <h1>{t("hero.title")}</h1>
                 <p>
-                    Helping women feel calm, grounded, and clear-minded through psychology-informed, trauma-aware energy and nervous system work.
+                    {t("hero.description")}
                     <br /><br />
-                    Sessions in English and German
+                    {t("hero.sessionNote")}
                 </p>
             </div>
             
             <div className={styles.hero_cta}>
-                <a href="https://calendly.com/laralensdorf/30min" target="_blank" rel="noopener noreferrer" >Book your free clarity call</a>
+                <a href="https://calendly.com/laralensdorf/30min" target="_blank" rel="noopener noreferrer" >{t("hero.cta")}</a>
             </div>
         </div>
     )

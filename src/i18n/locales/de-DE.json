@@ -1,0 +1,169 @@
+{
+  "hero": {
+    "title": "LARA LENSDORF",
+    "description": "Innere Ruhe, Erdung und Klarheit für Frauen durch psychologisch fundierte, trauma-sensible Arbeit mit Energie und Nervensystem.",
+    "sessionNote": "Sitzungen auf Englisch und Deutsch",
+    "cta": "Kostenloses Gespräch buchen",
+    "nav": {
+      "intro": "Über mich",
+      "help": "Angebote",
+      "contact": "Kontakt",
+      "about": "Über mich"
+    }
+  },
+  "text": {
+    "quote": "\"Zu wissen, was wir fühlen, ist der erste Schritt, um zu verstehen, warum wir so fühlen.\"",
+    "author": "— BESSEL VAN DER KOLK"
+  },
+  "explanation": {
+    "heading": "Du bist hier richtig, wenn…",
+    "items": [
+      "...du dich ständig überreizt und erschöpft fühlst",
+      "...dein Nervensystem nie zur Ruhe kommt",
+      "...Energieblockaden dich zurückhalten",
+      "...du dich vom eigenen Körper und deiner Intuition getrennt fühlst",
+      "...du schnell emotional aus der Balance gerätst",
+      "...du dich verloren oder unsicher über dich selbst fühlst"
+    ]
+  },
+  "newCards": {
+    "services": [
+      {
+        "title": "1. Energetische Heilsitzung",
+        "description": "Für alle, die eine sanfte Entlastung für Geist, Körper und Energie suchen.<br /><br />In dieser Session lösen wir gemeinsam emotionale Spannungen, befreien blockierte Energie und bringen dein System wieder ins Gleichgewicht. Du kannst loslassen, dein Nervensystem regulieren und dich wieder mit dir selbst verbinden.",
+        "fitHeading": "Diese Session ist ideal, wenn du:",
+        "fitItems": [
+          "Dich emotional überfordert fühlst",
+          "Dein Körper angespannt, schwer oder „aufgedreht“ ist",
+          "In alten Mustern feststeckst",
+          "Wieder Zugang zu innerer Ruhe und Klarheit finden möchtest"
+        ]
+      },
+      {
+        "title": "2. Nervensystem-Stabilisierung",
+        "description": "Für alle, die sich wieder sicher in ihrem Körper fühlen möchten.<br /><br />Diese Session unterstützt dein Nervensystem mit Atemübungen, Erdung und somatischen Techniken. Du lernst einfache, aber kraftvolle Übungen, die dein System entspannen, stabilisieren und deine innere Widerstandskraft stärken.",
+        "fitHeading": "Diese Session ist ideal, wenn du:",
+        "fitItems": [
+          "Unter chronischem Stress oder Überforderung leidest",
+          "Emotional leicht reagierst",
+          "Spannung wie bei Angstgefühlen spürst",
+          "Schwierigkeiten hast, dich zu erden oder im Moment präsent zu sein"
+        ]
+      },
+      {
+        "title": "3. Psychologische Begleitung",
+        "description": "Für alle, die sich verstanden, gehalten und gestärkt fühlen möchten.<br /><br />In dieser Session schauen wir, was wirklich in dir vorgeht. Du bekommst Unterstützung, die dir hilft, deine Emotionen, Muster und die Dinge, die dich zurückhalten, zu verstehen. So kannst du Schritt für Schritt mehr Klarheit, Selbstvertrauen und innere Stärke entwickeln.",
+        "fitHeading": "Diese Session ist ideal, wenn du:",
+        "fitItems": [
+          "Jemanden suchst, der wirklich zuhört",
+          "Unterstützung willst, die sowohl psychologisch als auch intuitiv ist",
+          "Klarheit über deine Muster und Emotionen gewinnen möchtest",
+          "Dich verstanden, gehalten und begleitet fühlen willst",
+          "Motivation und konkrete Schritte brauchst, die dich wirklich stärken"
+        ]
+      },
+      {
+        "title": "4. Astrologische Blueprint-Analyse",
+        "description": "Für alle, die ihre individuelle energetische „Signatur“ kennenlernen und verstehen möchten.<br /><br />Dies ist keine klassische Geburtshoroskop-Auswertung. Deine Blueprint-Analyse ist eine emotional-energetische Entdeckungsreise: Wer du bist, wie du funktionierst, was du brauchst und wie sich deine Energie auf natürliche Weise ausdrückt. Die Astrologie wird hier in praktische, lebensverändernde Einsichten übersetzt, speziell auf dich zugeschnitten.",
+        "fitHeading": "In dieser Session erkunden wir:",
+        "fitItems": [
+          "Deine emotionale Energie – deine Trigger und körperlichen Muster verstehen",
+          "Deine natürlichen Stärken & Ausdrucksweise – wie du authentisch strahlst",
+          "Deinen Kommunikationsstil – wie du dich beziehst und interagierst",
+          "Deine Nervensystem-Tendenzen – wie du auf Stress und Herausforderungen reagierst",
+          "Deinen Lebensweg & Zyklen – Orientierung für Wachstum und Transformation",
+          "Deine Beziehungsdynamik – in Liebe, Arbeit und sozialen Kontakten",
+          "Deinen energetischen Rhythmus & deine Balance – wann du handeln, ruhen oder Gas geben solltest"
+        ]
+      }
+    ]
+  },
+  "options": {
+    "scheduleNow": "Jetzt buchen",
+    "items": [
+      "Energy Healing Session",
+      "Nervensystem-Stabilisierung",
+      "Pschologische Begleitung",
+      "Astrologische Blueprint-Analyse"
+    ]
+  },
+  "intro": {
+    "subtitle": "Über mich",
+    "title": "Lara Lensdorf",
+    "titleSub": "Emotionale energetische Heilung | Körper- und Nervensystem-Balance",
+    "cta": "Über mich"
+  },
+  "contacts": {
+    "heading": "Kontakt",
+    "text": "Lass uns unverbindlich kennenlernen",
+    "cta": "Erstgespräch vereinbaren"
+  },
+  "footer": {
+    "credit": "2025 <a>Domenica.agency</a> — Möge diese Seite dir Balsam sein.",
+    "privacyLink": "Datenschutz",
+    "impressumLink": "Impressum"
+  },
+  "about": {
+    "titleDesktop": "Hallo, ich bin Lara Lensdorf",
+    "titleMobile": "Hallo, ich bin Lara Lensdorf",
+    "paragraphs": [
+      "Ich habe diesen Weg nicht gewählt, weil er trendy oder spirituell ist. Ich wähle ihn, weil ich ihn lebe.<br />Jahrelang habe ich selbst erfahren, wie unverarbeitete emotionale Muster, chronischer Stress und ein unreguliertes Nervensystem still und leise unser Leben, unsere Beziehungen, unseren Körper und unsere Art, in der Welt zu sein, prägen. Dabei habe ich gelernt, dass Erkenntnis allein nicht ausreicht. Wahre Veränderung geschieht erst, wenn der Körper sich sicher genug fühlt, loszulassen.",
+      "Meine Arbeit verbindet psychologisches Wissen mit energetischem und emotionalem Healing. Dabei wirken wir gleichzeitig auf mehreren Ebenen. Du bekommst Klarheit für den Geist, Ruhe für dein Nervensystem, Verarbeitung für deine Emotionen und Ausrichtung für deine Energie. So entsteht ein geerdeter und sicherer Raum, in dem Transformation tief spürbar wird.",
+      "Meine sensible und intuitive Herangehensweise hilft mir, wahrzunehmen, was in deinem Körper präsent ist, während wir das Tempo an dein System und deine Grenzen anpassen.<br /><br />Es geht in meiner Arbeit nicht darum, dich zu „reparieren“. Es geht darum, loszulassen, was dir nicht mehr dient, dein Nervensystem zu regulieren und die Verbindung zu deiner inneren Klarheit, Stärke und deinem Selbstvertrauen wiederzufinden."
+    ],
+    "story": "Jede Session bietet dir einen sicheren Raum, in dem du dich fallen lassen, gesehen werden und in deinem eigenen Tempo wachsen kannst. Wenn dich diese Arbeit anspricht, dann spürt ein Teil von dir wahrscheinlich schon, dass etwas bereit ist, sich zu verändern. Ich freue mich darauf, dich auf diesem Weg zu begleiten.",
+    "finalText": "Jetzt bist du dran. Lass uns loslassen, was dich zurückhält. Buche ein kurzes Kennenlerngespräch, um herauszufinden, wie ich dich unterstützen kann.",
+    "finalCta": "kostenloses Erstgespräch vereinbaren"
+  },
+  "privacy": {
+    "goBack": "zurück",
+    "title": "Datenschutzerklärung",
+    "lastUpdated": "Zuletzt aktualisiert:",
+    "sections": [
+      {
+        "heading": "1. Einleitung",
+        "text": "Willkommen auf der Website von Lara Lensdorf. Wir respektieren Ihre Privatsphäre und sind dem Schutz Ihrer persönlichen Daten verpflichtet. Diese Datenschutzerklärung informiert Sie darüber, wie wir Ihre persönlichen Daten schützen, wenn Sie unsere Website besuchen, und informiert Sie über Ihre Datenschutzrechte und den gesetzlichen Schutz."
+      },
+      {
+        "heading": "2. Daten, die wir erheben",
+        "text": "Diese Website verwendet derzeit keine Cookies oder Tracking-Technologien. Wir erheben nur Daten, die Sie uns freiwillig per E-Mail, WhatsApp oder bei der Buchung einer Sitzung über Calendly zur Verfügung stellen."
+      },
+      {
+        "heading": "3. Links zu Drittanbietern",
+        "text": "Diese Website enthält Links zu Websites Dritter (z.B. Calendly, WhatsApp). Das Anklicken dieser Links kann Dritten ermöglichen, Daten über Sie zu erheben oder weiterzugeben. Wir kontrollieren diese Websites Dritter nicht und sind für deren Datenschutzerklärungen nicht verantwortlich."
+      },
+      {
+        "heading": "4. Kontaktdaten",
+        "text": "Die verantwortliche Person für die Datenverarbeitung auf dieser Website ist: Lara Lensdorf, Fürstenbergstraße 21B, 33102 Paderborn"
+      },
+      {
+        "heading": "5. Aktualisierungen dieser Datenschutzerklärung",
+        "text": "Wir behalten uns das Recht vor, diese Datenschutzerklärung zu aktualisieren, wenn sich die Website oder rechtliche Anforderungen ändern."
+      }
+    ]
+  },
+  "impressum": {
+    "goBack": "zurück",
+    "title": "Impressum",
+    "sections": [
+      {
+        "heading": "Angaben gemäß § 5 TMG",
+        "text": "Lara Lensdorf<br /><br /><br />Deutschland"
+      },
+      {
+        "heading": "Kontakt",
+        "text": "E-Mail:"
+      },
+      {
+        "heading": "Umsatzsteuer",
+        "text": "Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG:<br />Nicht zutreffend aufgrund der Kleinunternehmerregelung (§ 19 UStG)"
+      },
+      {
+        "heading": "Streitschlichtung",
+        "text": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:",
+        "text2": "Unsere E-Mail-Adresse finden Sie oben im Impressum.",
+        "text3": "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+      }
+    ]
+  }
+}

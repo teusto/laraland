@@ -3,10 +3,12 @@ import styles from "./styles/text.module.scss";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { useInView } from "react-intersection-observer";
+import { useLocale } from "../i18n/LocaleContext";
 
 gsap.registerPlugin(SplitText);
 
 const Text = () => {
+    const { t } = useLocale();
     const { ref, inView } = useInView({
         triggerOnce: true,
         threshold: .1, // 10% of the element must be visible
@@ -31,8 +33,8 @@ const Text = () => {
 
     return (
         <div className={styles.text_wrapper} ref={ref}>
-            <h2 ref={h2Ref}>"Knowing what we feel is the first step to knowing why we feel that way.”
-            <span>— BESSEL VAN DER KOLK</span></h2>
+            <h2 ref={h2Ref}>{t("text.quote")}
+            <span>{t("text.author")}</span></h2>
         </div>
     );
 };

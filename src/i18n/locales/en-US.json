@@ -1,0 +1,169 @@
+{
+  "hero": {
+    "title": "LARA LENSDORF",
+    "description": "Helping women feel calm, grounded, and clear-minded through psychology-informed, trauma-aware energy and nervous system work.",
+    "sessionNote": "Sessions in English and German",
+    "cta": "Book your free clarity call",
+    "nav": {
+      "intro": "Intro",
+      "help": "Help",
+      "contact": "Contact",
+      "about": "About"
+    }
+  },
+  "text": {
+    "quote": "\"Knowing what we feel is the first step to knowing why we feel that way.\"",
+    "author": "— BESSEL VAN DER KOLK"
+  },
+  "explanation": {
+    "heading": "I can help you when...",
+    "items": [
+      "...You're feeling constantly overstimulated and exhausted",
+      "...You have a nervous system that's always on edge",
+      "...You have stuck energy and inner blocks that hold you back",
+      "...You're disconnected from your body and intuition",
+      "...You have fragile emotional resilience and are easily triggered",
+      "...You're feeling lost, out of alignment, or unsure of who you are"
+    ]
+  },
+  "newCards": {
+    "services": [
+      {
+        "title": "1. Energy Healing Session",
+        "description": "For those who want a gentle release for the mind, body and energy.<br /><br />In this session, we work together to dissolve emotional tension, free blocked energy and bring your system back into balance. My approach combines intuitive energy work, somatic guidance and emotional presence — so you can soften, regulate and reconnect with yourself again.",
+        "fitHeading": "You're a good fit for this session if:",
+        "fitItems": [
+          "You feel emotionally overwhelmed",
+          "Your body feels tense, heavy, or \"on edge\"",
+          "You're stuck in old patterns",
+          "You want to reconnect to your inner calm and clarity"
+        ]
+      },
+      {
+        "title": "2. Nervous System Regulation Session",
+        "description": "For those who want to feel safe in their body again.<br /><br />This session focuses on supporting your nervous system through somatic techniques, breathwork, grounding and co-regulation. With my psychological background, I guide you through simple but powerful practices that help your system relax, stabilize and find resilience again.",
+        "fitHeading": "This is perfect for:",
+        "fitItems": [
+          "Chronic stress or overwhelm",
+          "Emotional reactivity",
+          "Anxiety-like tension",
+          "Difficulty grounding or feeling present"
+        ]
+      },
+      {
+        "title": "3. Psychological Support",
+        "description": "For those who are ready to rise — to understand themselves, regulate their energy, and step into a more aligned, powerful version of who they are.<br /><br />This session is where we sit together — honestly, openly, and with full presence — and look at what is really going on inside you. I support you like a mentor: grounded, honest, encouraging, and fully here for your growth. With my background in Psychology and deep energetic understanding, I help you make sense of your emotions, your patterns, and the things that keep holding you back — so you can step into your power with clarity and confidence.",
+        "fitHeading": "This session is for you if you want:",
+        "fitItems": [
+          "Someone who listens",
+          "support that is both psychological and intuitive",
+          "clarity about your patterns and emotions",
+          "to feel understood, held and guided",
+          "motivation + steps that actually empower you"
+        ]
+      },
+      {
+        "title": "4. Astrological Blueprint Analysis",
+        "description": "For those who want to know their individual energetic fingerprint — explained and integrated.<br /><br />This isn't a classic birth chart reading. Your Blueprint Analysis is an emotional–energetic exploration of who you are, how you function, what you need, and how your energy naturally expresses itself. It translates astrology into practical, life-changing insights tailored specifically to you.",
+        "fitHeading": "In this session, we explore:",
+        "fitItems": [
+          "Your emotional energy – understanding your triggers and somatic patterns",
+          "Your natural strengths & expression –  how you shine authentically",
+          "Your communication style – how you relate and interact",
+          "Your nervous system tendencies – how you respond to stress and challenges",
+          "Your life purpose & cycles –  guiding your growth and transformation",
+          "Your relational patterns –  in love, work, and social connections",
+          "Your energetic rhythm & alignment –   knowing when to act, rest, or push forward"
+        ]
+      }
+    ]
+  },
+  "options": {
+    "scheduleNow": "Schedule Now",
+    "items": [
+      "Energy Healing Session",
+      "Nervous System Regulation Session",
+      "Psychological Support",
+      "Astrological Blueprint Analysis"
+    ]
+  },
+  "intro": {
+    "subtitle": "_Intro",
+    "title": "Lara Lensdorf",
+    "titleSub": "Energetic Emotional Healing |  Somatic Alignment",
+    "cta": "Know more about me"
+  },
+  "contacts": {
+    "heading": "Contact",
+    "text": "Would you like to talk to me first?",
+    "cta": "Book a intro session"
+  },
+  "footer": {
+    "credit": "2025 <a>Domenica.agency</a> — May this site be a balm upon you.",
+    "privacyLink": "Privacy Policy",
+    "impressumLink": "Impressum"
+  },
+  "about": {
+    "titleDesktop": "Hi im Lara Lensdorf",
+    "titleMobile": "Hi im Lara Lensdorf",
+    "paragraphs": [
+      "I didn't choose this work because it is trendy or spiritual. I choose it because I live it.<br />For years, I experienced firsthand how unresolved emotional patterns, chronic stress, and unregulated nervous system states quietly shape our lives, our relationships, our bodies, and the way we show up in the world. I also learned that insight alone is not enough. Real change happens when the body feels safe enough to let go.",
+      "My background in psychology, combined with specialized training in energetic and emotional healing, allows me to work on multiple levels at once: cognitive understanding, nervous system regulation, emotional processing, and subtle energetic alignment. This creates a grounded, safe, and deeply effective space for transformation.",
+      "My sensititve and intuitive approach helps me detect what is present in your body while keeping the pace that respects your system and your boundaries.<br /><br />This work is not about fixing you. It is about helping you release what no longer belongs to you, regulate your nervous system, and reconnect with your inner clarity, strength, and self trust."
+    ],
+    "story": "Every session is individualized. No formulas, no pressure, no performance. Just honest presence, deep listening, and precise energetic and emotional work, so you can move forward feeling more grounded, aligned, and connected to yourself. If you feel called to this work, it is usually because a part of you already knows something is ready to shift. I am more than happy to meet you!",
+    "finalText": "Your Turn, Let's break free from what's holding you back. Book a quick introductory session to see how we can support you.",
+    "finalCta": "Book a introductory session"
+  },
+  "privacy": {
+    "goBack": "go back",
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated:",
+    "sections": [
+      {
+        "heading": "1. Introduction",
+        "text": "Welcome to Lara Lensdorf's website. We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you as to how we look after your personal data when you visit our website and tell you about your privacy rights and how the law protects you."
+      },
+      {
+        "heading": "2. Data We Collect",
+        "text": "Currently, this website does not use cookies or tracking technologies. We only collect data that you voluntarily provide to us via email, WhatsApp, or when booking a session via Calendly."
+      },
+      {
+        "heading": "3. Third-Party Links",
+        "text": "This website includes links to third-party websites (e.g., Calendly, WhatsApp). Clicking on those links may allow third parties to collect or share data about you. We do not control these third-party websites and are not responsible for their privacy statements."
+      },
+      {
+        "heading": "4. Contact Details",
+        "text": "The person responsible for data processing on this website is: Lara Lensdorf, Fürstenbergstraße 21B, 33102 Paderborn"
+      },
+      {
+        "heading": "5. Updates to this Privacy Policy",
+        "text": "We reserve the right to update this privacy policy if the website or legal requirements change."
+      }
+    ]
+  },
+  "impressum": {
+    "goBack": "go back",
+    "title": "Impressum (Legal Notice)",
+    "sections": [
+      {
+        "heading": "Angaben gemäß § 5 TMG",
+        "text": "Lara Lensdorf<br /><br /><br />Germany"
+      },
+      {
+        "heading": "Kontakt",
+        "text": "E-Mail:"
+      },
+      {
+        "heading": "VAT",
+        "text": "VAT identification number pursuant to § 27a German VAT Act:<br />Not applicable due to the small business regulation (§ 19 UStG)"
+      },
+      {
+        "heading": "Streitschlichtung",
+        "text": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:",
+        "text2": "Unsere E-Mail-Adresse finden Sie oben im Impressum.",
+        "text3": "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+      }
+    ]
+  }
+}
