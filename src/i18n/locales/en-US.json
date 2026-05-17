@@ -2,8 +2,8 @@
   "hero": {
     "title": "LARA LENSDORF",
     "description": "Helping women feel calm, grounded, and clear-minded through psychology-informed, trauma-aware energy and nervous system work.",
-    "sessionNote": "Sessions in English and German",
-    "cta": "Book your free clarity call",
+    "sessionNote": "Sessions in English or German",
+    "cta": "Book your clarity call",
     "nav": {
       "intro": "Intro",
       "help": "Help",
@@ -96,7 +96,7 @@
   "contacts": {
     "heading": "Contact",
     "text": "Would you like to talk to me first?",
-    "cta": "Book a intro session"
+    "cta": "Book an intro session"
   },
   "footer": {
     "credit": "2025 <a>Domenica.agency</a> — May this site be a balm upon you.",
